@@ -1,0 +1,13 @@
+{
+  "release": "s_benchmark_v1",
+  "workbench_release": "v0",
+  "date": "2026-10-19",
+  "algorithm": "history-first-leaf-reservation-v1",
+  "entrypoint": "scripts/sample_small_benchmark.py",
+  "rules_path": "configs/sampling/s_benchmark_v1.json",
+  "rules_sha256": "98b7d955295c099a81f3f446bad2168c130999100d7b3fcb445639da7c4284a7",
+  "seed_policy": "one or more distinct integers; no historical seed requirement",
+  "full_question_pool_expected": 10649,
+  "eligible_question_pool_expected": 9249,
+  "official_private_suite": false
+}

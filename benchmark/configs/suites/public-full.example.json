@@ -1,0 +1,48 @@
+{
+  "suite_id": "mneme-asterion-public-text-full-source-v1",
+  "scope": "expanded",
+  "purpose": "complete_public_source_inventory_for_future_resampling",
+  "aggregation": "macro_benchmark",
+  "question_bank_expected_counts": {
+    "locomo_refined": 861,
+    "longmemeval_s": 500,
+    "clbench": 1899,
+    "personamem_v1": 589,
+    "personamem_v2": 5000,
+    "beam": 1800
+  },
+  "benchmarks": {
+    "locomo_refined": {
+      "data_dir": "../../datasets/raw/LoCoMo-Refined",
+      "media_policy": "text_only",
+      "source_manifest": "../../datasets/raw/LoCoMo-Refined/download_manifest.json",
+      "source_snapshot": "../../datasets/raw/LoCoMo-Refined"
+    },
+    "longmemeval_s": {
+      "data_file": "../../datasets/raw/LongMemEval/longmemeval_s_cleaned.json",
+      "source_manifest": "../../datasets/raw/LongMemEval/download_manifest.json",
+      "source_snapshot": "../../datasets/raw/LongMemEval"
+    },
+    "clbench": {
+      "data_file": "../../datasets/raw/CL-bench/snapshot/CL-bench.jsonl",
+      "source_manifest": "../../datasets/raw/CL-bench/download_manifest.json",
+      "source_snapshot": "../../datasets/raw/CL-bench/snapshot"
+    },
+    "personamem_v1": {
+      "data_dir": "../../datasets/raw/PersonaMem-v1/snapshot",
+      "source_manifest": "../../datasets/raw/PersonaMem-v1/download_manifest.json",
+      "source_snapshot": "../../datasets/raw/PersonaMem-v1/snapshot"
+    },
+    "personamem_v2": {
+      "data_dir": "../../datasets/raw/PersonaMem-v2/snapshot",
+      "mode": "generative",
+      "source_manifest": "../../datasets/raw/PersonaMem-v2/download_manifest.json",
+      "source_snapshot": "../../datasets/raw/PersonaMem-v2/snapshot"
+    },
+    "beam": {
+      "data_dir": "../../datasets/raw/BEAM/snapshot/data",
+      "source_manifest": "../../datasets/raw/BEAM/download_manifest.json",
+      "source_snapshot": "../../datasets/raw/BEAM/snapshot"
+    }
+  }
+}

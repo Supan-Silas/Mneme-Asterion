@@ -1,0 +1,106 @@
+[
+  {
+    "file": "test_admission.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_agentic.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_cache_bound.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_chunk_memory.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_concurrency.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_dci.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_embed_api.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_embedding_store_identity.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_event_dates.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_event_dates_at_add.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_event_dates_call.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_extra_fields.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_fact_evidence.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_fact_keys.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_hop2.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_ordering.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_parse_facts.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_request_log.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_rerank.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_supersede.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_updates.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_updates_v2.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_updates_v3.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_updates_v4.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_updates_v5.py",
+    "exit_code": 0
+  },
+  {
+    "file": "test_updates_v6.py",
+    "exit_code": 0
+  }
+]

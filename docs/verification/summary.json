@@ -1,0 +1,21 @@
+{
+  "release": "v0",
+  "benchmark_release": "s_benchmark_v1",
+  "date": "2026-10-19",
+  "linux": {
+    "ami_standalone_files": 26,
+    "ami_http_checks": 37,
+    "benchmark_tests": 90,
+    "benchmark_skipped": 0,
+    "all_passed": true,
+    "paid_model_calls": 0
+  },
+  "windows": {
+    "benchmark_tests": 90,
+    "benchmark_skipped": 1,
+    "ami_full_suite_portability": "not_passed; documented Linux target"
+  },
+  "live_service_restarted": false,
+  "official_smoke_run": false,
+  "official_full_run": false
+}

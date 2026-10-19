@@ -1,0 +1,37 @@
+server {
+    listen 80 default_server;
+    server_name 101.201.140.97;
+    server_tokens off;
+    access_log off;
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/ami-acme;
+        default_type text/plain;
+        try_files $uri =404;
+    }
+    location / { return 404; }
+}
+server {
+    listen 443 ssl default_server;
+    server_name 101.201.140.97;
+    ssl_certificate /etc/letsencrypt/live/ami-ip/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/ami-ip/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    server_tokens off;
+    access_log off;
+    client_max_body_size 64m;
+    client_body_timeout 1800s;
+    location ~ ^/(health|add|search)$ {
+        proxy_pass http://127.0.0.1:8012;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header Connection "";
+        proxy_connect_timeout 10s;
+        proxy_read_timeout 1800s;
+        proxy_send_timeout 1800s;
+        proxy_next_upstream off;
+    }
+    location / { return 404; }
+}

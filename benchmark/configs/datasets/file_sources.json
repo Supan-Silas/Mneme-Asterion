@@ -1,0 +1,40 @@
+{
+  "source": "pinned public files; no AML private bundle",
+  "datasets": {
+    "LoCoMo-Refined": {
+      "repo_id": "mem-eval-suite/LoCoMo_refined",
+      "revision": "887091190789e8d6760e70b9edd696539923dc4f",
+      "scope": "complete public conversation/question pair",
+      "files": [
+        {
+          "path": "conversations.jsonl",
+          "bytes": 4195054,
+          "sha256": "abbe220013815b1761c07d9ab7d6147ee08fb089f1a8a083fd31188cdcd91444",
+          "upstream_blob_id": "efc4741bcd666ec43852a1377aed1508cc227c92",
+          "url": "https://raw.githubusercontent.com/mem-eval-suite/LoCoMo_refined/887091190789e8d6760e70b9edd696539923dc4f/data/public/conversations.jsonl"
+        },
+        {
+          "path": "questions.jsonl",
+          "bytes": 1302480,
+          "sha256": "4dd84cf65a28ece0ed6b2a1b7b2700ea639f4e7b2c5e1afcc511e47e81732790",
+          "upstream_blob_id": "5210af7e6aa9e4597c68c6f767b7e083fdf5db6a",
+          "url": "https://raw.githubusercontent.com/mem-eval-suite/LoCoMo_refined/887091190789e8d6760e70b9edd696539923dc4f/data/public/questions.jsonl"
+        }
+      ]
+    },
+    "LongMemEval": {
+      "repo_id": "xiaowu0162/longmemeval-cleaned",
+      "revision": "98d7416c24c778c2fee6e6f3006e7a073259d48f",
+      "scope": "complete S cleaned file; no oracle or M",
+      "files": [
+        {
+          "path": "longmemeval_s_cleaned.json",
+          "bytes": 277383467,
+          "sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+          "upstream_blob_id": null,
+          "url": "https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/98d7416c24c778c2fee6e6f3006e7a073259d48f/longmemeval_s_cleaned.json"
+        }
+      ]
+    }
+  }
+}
