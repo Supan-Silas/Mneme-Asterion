@@ -4,7 +4,7 @@ Experimental subset: explicit first-person attributes identified by all content
 words of a literal control. Ambiguous/other-person clauses are retained.
 """
 import re
-from intent_scope_v5 import explicit_withdrawal,augment_audit
+from mneme_asterion.state.intent import explicit_withdrawal,augment_audit
 STOP=set('a an the of for my me i user please forget remember use using retain restore again now current currently to this that it is was are attribute anymore do not dont and'.split())
 def terms(s):
  return {w[:-1] if w.endswith('s') and len(w)>4 else w for w in re.findall(r'[a-z]+',s.lower()) if w not in STOP}

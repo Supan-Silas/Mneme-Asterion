@@ -6,7 +6,7 @@ from unittest.mock import patch
 import httpx
 from evaluation.run_prepared import request,add_payload
 from tools.verify_release import verify
-from launch import configure
+from mneme_asterion.cli import configure
 
 class ReleaseTests(unittest.TestCase):
     def test_exact_source(self):self.assertTrue(verify()['pass'])

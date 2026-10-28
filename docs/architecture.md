@@ -10,17 +10,17 @@ Mneme-Asterion 将长期记忆检索中的三个问题分开处理：找得到�
 
 | 模块 | 代码 | 职责 |
 |---|---|---|
-| 启动与配置 | `run_v4.py`、`launch.py`、`app/config.py` | 配置加载、模型与方法身份、服务启动 |
+| 启动与配置 | `run_v4.py`、`mneme_asterion/cli.py`、`app/config.py` | 配置加载、模型与方法身份、服务启动 |
 | 持久化 | `app/store.py`、`mneme_e/raw_store.py` | 事实／原文向量、更新记录、原文日志 |
 | 写入 | `app/main.py`、`app/llm.py`、`app/updates.py` | 事实抽取、更新识别和提交 |
 | 基础检索 | `app/main.py`、`app/rerank.py` | AMI检索与证据组织 |
-| 原文补证 | `e_core/`、`repair_v1.py`、`repair_quotes.py` | 问题范围、BM25、邻接消息、引用核验 |
-| 撤回处理 | `state_withdrawal*.py`、`state_policy.py` | 显式控制识别、片段过滤、有效性提示 |
-| 作用域状态 | `scoped_adapter.py`、`intent_scope_v5.py`、`state_finalize_v6.py`、`state_scoped*.py` | 人物／属性状态与查询局部投影 |
-| 来源关联 | `provenance_v4.py` | 证据到写入请求及原始消息的映射 |
-| HTTP输出 | `p2_service.py`、`mneme_e/service.py` | 用户隔离、Add/Search接口与结果序列化 |
+| 原文补证 | `e_core/`、`mneme_asterion/retrieval/` | 问题范围、BM25、邻接消息、引用核验 |
+| 撤回处理 | `mneme_asterion/state/withdrawal.py`、`echo.py`、`policy.py` | 显式控制识别、片段过滤、有效性提示 |
+| 作用域状态 | `mneme_asterion/state/adapter.py`、`intent.py`、`transitions.py`、`ownership.py`、`scope.py`、`projection.py` | 人物／属性状态与查询局部投影 |
+| 来源关联 | `mneme_asterion/provenance.py` | 证据到写入请求及原始消息的映射 |
+| HTTP输出 | `mneme_asterion/service.py`、`mneme_e/service.py` | 用户隔离、Add/Search接口与结果序列化 |
 
-代码中的版本后缀表示被组合调用的实现层；实际调用入口是 `p2_service.py` 和 `scoped_adapter.py`。
+`retrieval/` 将候选构造、检索规划、引用核验分别放在 `support.py`、`planning.py`、`quotes.py`。`state/` 将控制识别、撤回片段处理、残留旧值处理、状态转换、归属过滤和查询投影分层组合；`adapter.py`负责连接状态处理与来源信息。
 
 ## 写入与建库
 

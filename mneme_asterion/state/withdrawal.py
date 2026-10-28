@@ -1,8 +1,8 @@
 """P2-W: narrow read-time suppression of explicit active withdrawals.
 No reference/category/score inputs; no database deletion or new value updates.
 """
-from variants import *
-from repair_quotes import reconcile_quotes
+from mneme_asterion.retrieval.support import *
+from mneme_asterion.retrieval.quotes import reconcile_quotes
 from e_core.methods import WITHDRAW,RESTORE,audit_controls,attribute_terms,FILTER_PROMPT,validate_edits
 
 def withdrawal_state(raw,count):

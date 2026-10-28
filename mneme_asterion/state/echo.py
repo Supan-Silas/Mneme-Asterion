@@ -1,5 +1,5 @@
 """P2-W2: semantic clause suppression plus deterministic active-control echo removal."""
-from state_withdrawal import *
+from mneme_asterion.state.withdrawal import *
 
 ACK=re.compile(r"(?:got it|understood|i(?:['’]ll| will)|i (?:have|will)).{0,90}?(?:forget|won['’]t remember|will not remember)",re.I|re.S)
 

@@ -1,5 +1,5 @@
 import unittest
-from state_policy import *
+from mneme_asterion.state.policy import *
 class NoticeTests(unittest.TestCase):
  def active(self):return [{'id':'c','body':'Please forget I like coffee.','scope_audit':{'subject':'User'}}]
  def test_notice_value_free(self):self.assertNotIn('coffee',NOTICE.casefold());self.assertNotIn('hora',NOTICE.casefold())

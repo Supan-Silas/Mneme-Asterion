@@ -16,7 +16,7 @@
 | `AMI_AUTH_TOKEN` | Add/Search接口的访问Token |
 | `P2_SCOPED_STATE` | `1`，启用ScopedState V4 |
 
-`run_v4.py`验证以上模型与方法配置。P2对照可通过 `launch.py` 配合 `P2_SCOPED_STATE=0`运行。
+`run_v4.py`验证以上模型与方法配置。P2对照可通过 `python -m mneme_asterion.cli --env-file <配置文件>` 配合 `P2_SCOPED_STATE=0`运行。
 
 ## 并发与超时
 

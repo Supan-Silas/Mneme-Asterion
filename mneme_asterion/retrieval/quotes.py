@@ -1,5 +1,5 @@
 """Literal quote/fragment identity reconciliation; never substitutes unrelated text."""
-from repair_v1 import *
+from mneme_asterion.retrieval.planning import *
 
 def reconcile_quotes(v,candidates):
  assert isinstance(v,dict) and isinstance(v.get('supports'),list)

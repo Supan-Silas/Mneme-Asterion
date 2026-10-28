@@ -1,5 +1,5 @@
 import unittest
-from repair_v1 import *
+from mneme_asterion.retrieval.planning import *
 class RepairTests(unittest.TestCase):
  def test_user_kept(self):self.assertTrue(is_personal_record({'role':'user','speaker':'User'}))
  def test_named_assistant_person_kept(self):self.assertTrue(is_personal_record({'role':'assistant','speaker':'Maria'}))

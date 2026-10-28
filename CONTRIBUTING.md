@@ -3,6 +3,10 @@
 ## 代码结构
 
 ```text
+run_v4.py            统一启动入口
+mneme_asterion/      HTTP服务、配置与来源关联
+  retrieval/        检索规划、补证与引用核验
+  state/            撤回、恢复与作用域状态
 app/                 AMI写入、更新、存储与基础检索
 mneme_e/             原文日志与服务基础
 e_core/              原文候选检索与补证辅助

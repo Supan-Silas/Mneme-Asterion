@@ -1,5 +1,12 @@
 # Changelog
 
+## v4.0.2 — 2026-10-28
+
+- Organize service, retrieval and scoped-state modules under `mneme_asterion/`; retain `run_v4.py` as the root entry point.
+- Replace experimental filename suffixes with functional module names and consolidate the identical state-projection modules.
+- Update imports and repository-relative resource lookup while preserving model prompts, parameters and memory processing logic.
+- Document the small-benchmark workflow, its upstream repository, and ten-seed results in the README.
+
 ## v4.0.1 — 2026-10-28
 
 - Reorganize public documentation around architecture, configuration, API, evaluation, and deployment.

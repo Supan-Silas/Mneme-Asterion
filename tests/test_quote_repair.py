@@ -1,5 +1,5 @@
 import unittest
-from repair_quotes import reconcile_quotes
+from mneme_asterion.retrieval.quotes import reconcile_quotes
 class IdentityTests(unittest.TestCase):
  def setUp(self):self.cs=[{'id':'s1','source_ids':['D1:1'],'body':'Her name is Shadow.'},{'id':'s2','source_ids':['D1:2'],'body':'That sounds nice.'}]
  def test_original_source_alias(self):self.assertEqual(reconcile_quotes({'supports':[{'source_id':'D1:1','quote':'Her name is Shadow.'}]},self.cs)['supports'][0]['source_id'],'s1')

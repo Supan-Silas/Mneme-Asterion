@@ -7,8 +7,8 @@ from app import config, llm
 from mneme_e import service as original, raw_store
 from memory_benchmark.pipeline.context import GPTTokenizer
 from e_core.methods import raw_records
-from repair_quotes import generate_r1q
-from state_policy import generate_state_policy
+from mneme_asterion.retrieval.quotes import generate_r1q
+from mneme_asterion.state.policy import generate_state_policy
 
 app = original.app
 METHOD = 'ScopedStateV4' if os.environ.get('P2_SCOPED_STATE', '0') == '1' else 'P2'
@@ -79,7 +79,7 @@ def search(request: original.native.SearchRequest,
             evidence, _ = generate_r1q(request.query, base, raw, call, tok)
             evidence, _ = generate_state_policy(request.query, evidence, raw, call, tok)
             if os.environ.get('P2_SCOPED_STATE', '0') == '1':
-                from scoped_adapter import apply as apply_scoped_state
+                from mneme_asterion.state.adapter import apply as apply_scoped_state
                 evidence, _ = apply_scoped_state(request.query, evidence, raw, config.DB_PATH, request.user_id, tok.count)
         except llm.UpstreamUnavailable:
             raise

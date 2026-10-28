@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 from reproduction.serve import clear_model_environment, read_profile
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 
 def configure(env_file, db=None):
     values = read_profile(Path(env_file).resolve())
@@ -44,7 +44,7 @@ def main():
         print('Configuration valid; values withheld; no API calls.')
         return
     import uvicorn
-    from p2_service import app
+    from mneme_asterion.service import app
     uvicorn.run(app, host=a.host, port=a.port, workers=1, access_log=False)
 
 if __name__ == '__main__':

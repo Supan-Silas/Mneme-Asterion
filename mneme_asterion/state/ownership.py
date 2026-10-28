@@ -1,6 +1,6 @@
 """Narrow I/H2 patch: explicit query-matching state only; P2 otherwise."""
-from state_finalize_v6 import finalize as full_finalize
-from state_finalize_v6 import terms
+from mneme_asterion.state.transitions import finalize as full_finalize
+from mneme_asterion.state.transitions import terms
 import re
 def own_query(question):
  return bool(re.search(r'\b(?:my|mine)\b',question,re.I)) and not re.search(r'\b(?:colleague|friend|their|his|her|someone|hypothetical|suppose|imagine)\b',question,re.I) and not re.search(r"\b(?!(?:What|Who|Where|When|How|It)['’]s\b)[A-Z][a-z]+['’]s\b",question)

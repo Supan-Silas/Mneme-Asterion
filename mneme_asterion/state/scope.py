@@ -1,7 +1,7 @@
 """Query-local state projection. No persisted source deletion. Ambiguous multi-slot queries preserve P2."""
 import re
-from state_finalize_v6 import finalize as state_finalize,terms
-from state_scoped_v1 import finalize as prior_finalize,own_query
+from mneme_asterion.state.transitions import finalize as state_finalize,terms
+from mneme_asterion.state.ownership import finalize as prior_finalize,own_query
 def focus(question):return re.split(r'\bReply\b',question,flags=re.I)[0].strip()
 def single(question):return not re.search(r'\b(?:and|also|both|compare|versus|all|list|each|respectively|before|previous|ever)\b',focus(question),re.I)
 def finalize(question,evidence,raw,audit):

@@ -1,7 +1,7 @@
 """Optional postprocessor for portable P2; no model calls or DB writes."""
-from state_withdrawal import withdrawal_state
-from state_scoped import finalize
-from provenance_v4 import request_source_map,attach
+from mneme_asterion.state.withdrawal import withdrawal_state
+from mneme_asterion.state.projection import finalize
+from mneme_asterion.provenance import request_source_map,attach
 def apply(query,evidence,raw,db_path,user_id,count):
  _,audit=withdrawal_state(raw,count)
  # Check activation first; most requests preserve P2 byte-for-byte and avoid

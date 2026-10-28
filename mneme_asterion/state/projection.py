@@ -1,7 +1,7 @@
 """Two explicit current-user attributes: preserve a valid slot while honoring another slot's withdrawal."""
 import re
-from state_scoped_v3 import finalize as prior,focus
-from state_finalize_v6 import finalize as states,terms
+from mneme_asterion.state.scope import finalize as prior,focus
+from mneme_asterion.state.transitions import finalize as states,terms
 def finalize(question,evidence,raw,audit):
  q=focus(question);m=re.fullmatch(r'What (?:are|is) (my .+?) and (my .+?)\?',q,re.I)
  if not m:return prior(question,evidence,raw,audit)

@@ -1,6 +1,7 @@
 import unittest
 import hashlib
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -84,6 +85,18 @@ class ReleaseIdentityTests(unittest.TestCase):
         result = subprocess.run([sys.executable, str(entry), '--help'], capture_output=True, text=True)
         self.assertEqual(0, result.returncode, result.stderr)
         self.assertIn('--env-file', result.stdout)
+
+    def test_packaged_cli_resolves_repository_resources(self):
+        from mneme_asterion.cli import configure
+        with tempfile.TemporaryDirectory() as tmp, patch.dict(os.environ):
+            root = Path(tmp)
+            env_file = root / 'fixture.env'
+            env_file.write_text('\n'.join(k + '=' + v for k, v in self.values.items()))
+            database = root / 'data' / 'memory.sqlite3'
+            self.assertEqual(configure(env_file, database), database.resolve())
+            repository = Path(__file__).resolve().parents[1]
+            self.assertEqual(Path(os.environ['TIKTOKEN_CACHE_DIR']), repository / 'tokenizer-cache')
+            self.assertTrue(database.parent.is_dir())
 
 
 if __name__ == '__main__':

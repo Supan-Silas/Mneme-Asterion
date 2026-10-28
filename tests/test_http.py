@@ -12,7 +12,7 @@ os.environ.update(AMI_DB_PATH=str(Path(tmp.name)/'fixture.sqlite3'), AMI_AUTH_TO
 os.environ['TIKTOKEN_CACHE_DIR'] = str(Path(__file__).resolve().parents[1] / 'tokenizer-cache')
 install_fakes()
 from fastapi.testclient import TestClient
-import p2_service as s
+import mneme_asterion.service as s
 
 class HTTPTests(unittest.TestCase):
     @classmethod

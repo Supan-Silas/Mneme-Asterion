@@ -1,5 +1,5 @@
 import unittest
-from state_projection_v4 import finalize
+from mneme_asterion.state.projection import finalize
 def raw(body,i):return {'id':str(i),'role':'user','speaker':'user','body':body,'text':body,'source_ids':[str(i)]}
 class Check(unittest.TestCase):
  def test_pair(self):

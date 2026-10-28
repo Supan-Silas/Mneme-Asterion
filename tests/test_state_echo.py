@@ -1,5 +1,5 @@
 import unittest
-from state_withdrawal_v2 import *
+from mneme_asterion.state.echo import *
 class EchoTests(unittest.TestCase):
  def ctrl(self):return {'id':'c','body':'Please forget that I like coffee.','scope_audit':{'attribute_quote':'that I like coffee','subject':'User'}}
  def test_directive_only_removed(self):

@@ -1,6 +1,6 @@
 import unittest
-from state_scoped import finalize
-from state_scoped_v1 import own_query
+from mneme_asterion.state.projection import finalize
+from mneme_asterion.state.ownership import own_query
 class Tests(unittest.TestCase):
  def raw(self,i,body):return {'id':i,'role':'user','speaker':'user','body':body,'text':body,'source_ids':[i]}
  def test_ambiguous_owner_without_control_preserves_p2(self):

@@ -9,8 +9,9 @@ Mneme-Asterion 基于 [ActiveMemoryIndex（AMI）](https://github.com/linxuhao/A
 - **问题驱动的原文补证**：在 AMI 检索结果上识别人物关系、时间锚点和列表成员等信息缺口，通过 BM25 与邻接消息补充证据。
 - **可追溯的证据选择**：补充内容必须匹配来源中的原文引用；生成式选择器负责挑选材料，返回内容保留来源关联。
 - **作用域状态管理（ScopedState）**：按人物和属性解释显式撤回与恢复，抑制失效副本，区分条件表达与有效授权，同时保留无关属性。
+- **小规模多能力评测与运行工程**：基于 [Agent Memory Benchmark](https://github.com/Nonlotus-eater/ami-reproduction/tree/main/benchmark) 建立多seed评测流程；本项目迭代中提供了并发调度、共享模型准入、断点恢复与失败补跑实现，用于缩短实验反馈周期。
 
-写入、事实抽取和向量索引继承 AMI；上述改进集中在证据检索、组织与有效性处理。模块与来源见[系统设计](docs/architecture.md)和[来源说明](ATTRIBUTION.md)。
+写入、事实抽取和向量索引继承 AMI；记忆方法改进集中在证据检索、组织与有效性处理。小benchmark由独立仓库维护，完整抽样与并发运行代码见上述链接。模块与来源见[系统设计](docs/architecture.md)和[来源说明](ATTRIBUTION.md)。
 
 ## 工作流程
 
@@ -24,6 +25,8 @@ Mneme-Asterion 基于 [ActiveMemoryIndex（AMI）](https://github.com/linxuhao/A
 
 ## 实验结果
 
+### LoCoMo-Refined
+
 LoCoMo-Refined：10条完整历史、861题，每种方法进行5轮独立建库评测。统一使用 gpt-4o-mini、text-embedding-v4，报告准确率均值与样本标准差。
 
 | 方法 | 准确率（%） |
@@ -33,6 +36,38 @@ LoCoMo-Refined：10条完整历史、861题，每种方法进行5轮独立建库
 | **Mneme-Asterion：ScopedState V4** | **85.30 ± 0.67** |
 
 相对 AMI 提高 **2.72 个百分点**。P2 与 V4 在该静态问答集上表现相近；状态变化测试及完整实验条件见[评测文档](docs/evaluation.md)。逐轮正确数提供于 [results/locomo_refined.json](results/locomo_refined.json)。
+
+### 小benchmark：多能力评测
+
+使用 [Agent Memory Benchmark（27d2733）](https://github.com/Nonlotus-eater/ami-reproduction/tree/27d2733/benchmark)，按公开数据集及原生题型比例抽样，保留题目对应的完整历史，覆盖六个数据版本与七项能力。评测seed17–26，每seed 200题，每种方法共2,000题次；分数为七能力等权宏平均，报告十seed均值与样本标准差。
+
+| 方法 | 能力宏平均（%） |
+|---|---:|
+| AMI | 53.51 ± 2.43 |
+| InvMem | 52.00 ± 2.98 |
+| ReFind | 51.86 ± 4.66 |
+| P2 | 56.21 ± 2.53 |
+| **ScopedState V4（历史冻结版）** | **57.17 ± 2.82** |
+
+AMI、P2和V4共享新建冻结数据库，InvMem与ReFind使用各自原生建库。此轮使用边界修复前的冻结V4；P2与V4的Reader输入相同，二者分差来自回答与评分波动。逐seed数据与实验设置见[评测文档](docs/evaluation.md)。
+
+## 代码结构
+
+```text
+run_v4.py             启动入口
+mneme_asterion/
+  cli.py              配置与启动
+  service.py          HTTP接口与检索流程
+  provenance.py       证据来源关联
+  retrieval/          检索规划、原文补证与引用核验
+  state/              撤回、恢复、归属与状态投影
+app/                  AMI写入、更新与基础检索
+mneme_e/               原文日志与服务基础
+e_core/               BM25与邻接补证辅助
+tests/                单元与HTTP集成测试
+evaluation/           外部评测框架接入
+docs/                 系统文档
+```
 
 ## 快速开始
 

@@ -21,3 +21,9 @@ AMI原始快照的上游commit未记录；来源标识及文件指纹保存于 `
 - 服务层提供原文日志、幂等写入、用户隔离、接口序列化与部署入口。
 
 代码按仓库 [LICENSE](LICENSE) 的MIT条款发布，第三方依赖沿用各自许可。
+
+## 小benchmark与评测工程
+
+[Agent Memory Benchmark](https://github.com/Nonlotus-eater/ami-reproduction/tree/main/benchmark) 提供公开数据抽样、原生方法适配、统一Reader、评分和能力汇总。本项目使用其评测协议进行方法比较，并在迭代过程中实现和分享了多seed并发调度、共享模型准入、持久化恢复及失败补跑代码。完整评测框架在其独立仓库维护；本仓库提供记忆服务、HTTP评测接入示例与实验统计。
+
+README的小benchmark结果对应 `27d2733` 和本项目扩展的seed17–26。LoCoMo的逐轮结果与统计设置见 `results/locomo_refined.json`。

@@ -1,5 +1,5 @@
 import unittest
-from state_withdrawal import *
+from mneme_asterion.state.withdrawal import *
 class WithdrawalTests(unittest.TestCase):
  def r(self,i,body,speaker='User'):return {'id':'s'+str(i),'body':body,'text':body,'source_ids':['D'+str(i)],'role':'user','speaker':speaker,'session':0,'message':i}
  def test_real_withdrawal_active(self):self.assertEqual(len(withdrawal_state([self.r(0,'Please forget that I like tea.')],len)[0]),1)

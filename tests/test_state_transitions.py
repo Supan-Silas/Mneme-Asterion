@@ -7,8 +7,8 @@ from pathlib import Path
 from unittest.mock import patch
 
 from mneme_e import raw_store
-from state_scoped import finalize
-from state_withdrawal import withdrawal_state
+from mneme_asterion.state.projection import finalize
+from mneme_asterion.state.withdrawal import withdrawal_state
 
 
 def record(i, body, role='user', speaker='user'):
