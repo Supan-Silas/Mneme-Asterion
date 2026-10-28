@@ -1,0 +1,1 @@
+Public tiktoken o200k_base cache bundled for offline HTTP acceptance. This is tokenizer data, not model credentials. Runtime may use TIKTOKEN_CACHE_DIR to select this directory.

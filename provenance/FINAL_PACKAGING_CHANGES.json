@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-28",
+  "algorithm_changed": false,
+  "runtime_core": "scoped-state-v4-review-rc1-20261026",
+  "new": [
+    "run_v4.py",
+    "tools/preflight.py",
+    "tools/test_preflight.py"
+  ],
+  "changed": [
+    "tools/smoke.py",
+    "evaluation/run_prepared.py"
+  ],
+  "description": "Mandatory V4 startup identity guard; synthetic probe checks method; legacy open-QA helper rejects options before paid calls; documentation and provenance refreshed."
+}

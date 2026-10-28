@@ -145,7 +145,7 @@ def encode_or_unavailable(texts: list[str], **kwargs) -> np.ndarray:
 # note_extra() reports the names.
 class Message(BaseModel):
     model_config = ConfigDict(extra="allow")
-    role: Literal["user", "assistant"]
+    role: Literal["user", "assistant", "system"]
     content: str
     timestamp: int | None = None
 

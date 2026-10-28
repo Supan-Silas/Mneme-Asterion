@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "launch": "portable launch.py",
+  "private_database": true,
+  "production_unchanged": true,
+  "add_seconds": 1.433200379000482,
+  "search_seconds": 2.7261969669998507,
+  "evidence_count": 2,
+  "method": "P2",
+  "contains_synthetic_fact": true,
+  "quality_score": null,
+  "provider_billing": "not measured"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "environment": "Linux",
+  "synthetic_questions": 3,
+  "api_calls": 0,
+  "mock_http_calls": [
+    "/add",
+    "/add",
+    "/search",
+    "/search",
+    "/add",
+    "/add",
+    "/search"
+  ],
+  "quality_score": null,
+  "benchmark": "a3f9610 isolated copy; six native sources restored LF only after SHA256 matches frozen audit; no hash bypass"
+}

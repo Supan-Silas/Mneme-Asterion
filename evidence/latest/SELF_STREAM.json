@@ -1,0 +1,9 @@
+{
+  "scope": "120 development sequences / 600 checkpoints; evaluated frozen version",
+  "AMI": 481,
+  "P2": 496,
+  "ScopedStateV4": 599,
+  "InvMem": 498,
+  "ReFind": 462,
+  "denominator": 600
+}

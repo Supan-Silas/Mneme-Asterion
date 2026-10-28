@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "tests": 59,
+  "results": [
+    {
+      "module": "test_release",
+      "passed": true,
+      "tests": 6,
+      "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.597s\n\nOK\n"
+    },
+    {
+      "module": "test_state_echo",
+      "passed": true,
+      "tests": 4,
+      "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.002s\n\nOK\n"
+    },
+    {
+      "module": "test_state_policy",
+      "passed": true,
+      "tests": 4,
+      "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "module": "test_state_withdrawal",
+      "passed": true,
+      "tests": 10,
+      "output": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.002s\n\nOK\n"
+    },
+    {
+      "module": "test_repair_v1",
+      "passed": true,
+      "tests": 9,
+      "output": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "module": "test_quote_repair",
+      "passed": true,
+      "tests": 7,
+      "output": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "module": "test_http",
+      "passed": true,
+      "tests": 7,
+      "output": "2026-10-26 23:52:35,106 INFO ami ready: auth=bearer embed=text-embedding-v4 llm=gpt-4o-mini(key set) return_limit=100 recall_weight=0.50 agentic=off raw_first=on window=1 fact_evidence=0 fact_select=off chunk_memory=off rerank=off event_dates=add:0/addcall:0/stored:0/llm:0 cache_max=1000000 embed_threads=1\n2026-10-26 23:52:35,510 INFO httpx HTTP Request: POST http://testserver/add \"HTTP/1.1 200 OK\"\n2026-10-26 23:52:35,519 INFO httpx HTTP Request: POST http://testserver/add \"HTTP/1.1 200 OK\"\n2026-10-26 23:52:35,524 INFO httpx HTTP Request: POST http://testserver/add \"HTTP/1.1 409 Conflict\"\n.2026-10-26 23:52:35,535 INFO httpx HTTP Request: POST http://testserver/search \"HTTP/1.1 401 Unauthorized\"\n.2026-10-26 23:52:35,536 INFO httpx HTTP Request: GET http://testserver/health \"HTTP/1.1 200 OK\"\n.2026-10-26 23:52:35,549 INFO httpx HTTP Request: POST http://testserver/search \"HTTP/1.1 200 OK\"\n..2026-10-26 23:52:35,555 INFO httpx HTTP Request: POST http://testserver/search \"HTTP/1.1 200 OK\"\n2026-10-26 23:52:35,559 INFO httpx HTTP Request: POST http://testserver/search \"HTTP/1.1 200 OK\"\n.2026-10-26 23:52:35,562 INFO httpx HTTP Request: POST http://testserver/search \"HTTP/1.1 503 Service Unavailable\"\n.\n----------------------------------------------------------------------\nRan 7 tests in 0.498s\n\nOK\n"
+    },
+    {
+      "module": "test_scoped",
+      "passed": true,
+      "tests": 3,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.003s\n\nOK\n"
+    },
+    {
+      "module": "test_state_v4",
+      "passed": true,
+      "tests": 3,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.002s\n\nOK\n"
+    },
+    {
+      "module": "test_publication_regressions",
+      "passed": true,
+      "tests": 6,
+      "output": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.024s\n\nOK\n"
+    }
+  ]
+}

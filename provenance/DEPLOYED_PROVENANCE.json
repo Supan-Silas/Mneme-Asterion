@@ -1,0 +1,37 @@
+{
+  "method": "evaluated P2-P, not QBind",
+  "modules": {
+    "repair_quotes.py": {
+      "evaluated_sha256": "222170b8542a3558cf7d2f2a68aff089017e3583a171c4457b00a96f592ba610",
+      "deployed_sha256": "222170b8542a3558cf7d2f2a68aff089017e3583a171c4457b00a96f592ba610"
+    },
+    "repair_v1.py": {
+      "evaluated_sha256": "8e74a6eafa1b0cc19500efa278e71ae4bf8b6b504347c9fd4b9e4e0fa546728d",
+      "deployed_sha256": "8e74a6eafa1b0cc19500efa278e71ae4bf8b6b504347c9fd4b9e4e0fa546728d"
+    },
+    "variants.py": {
+      "evaluated_sha256": "6b79346f26db7cd13f256cd441b967d6a230f8683d78e533e5c2e747a3175202",
+      "deployed_sha256": "d5cf2cde7392b7a3c389076552f52be6fe27ad7f3e37d776df3f7b3eb3d28f4b"
+    },
+    "state_withdrawal.py": {
+      "evaluated_sha256": "803938da999eea39dc391703e5da9f535aa552c2bd24fca9e7f4b87ff5d8c20a",
+      "deployed_sha256": "803938da999eea39dc391703e5da9f535aa552c2bd24fca9e7f4b87ff5d8c20a"
+    },
+    "state_withdrawal_v2.py": {
+      "evaluated_sha256": "11e67915fa4872e32da511ea49a5699cf8a7b5420e8d425699ec4b91c8c730a3",
+      "deployed_sha256": "11e67915fa4872e32da511ea49a5699cf8a7b5420e8d425699ec4b91c8c730a3"
+    },
+    "state_policy.py": {
+      "evaluated_sha256": "53ff2c23ce6515d83eae2e076c9315bb030eb8ce35052353e0f074f671177396",
+      "deployed_sha256": "53ff2c23ce6515d83eae2e076c9315bb030eb8ce35052353e0f074f671177396"
+    }
+  },
+  "adapter_changes": [
+    "pure imports instead of experimental common.py",
+    "HTTP response mapping",
+    "per-user raw history",
+    "transform seed17"
+  ],
+  "public_paths_unchanged": true,
+  "new_empty_database": "/var/lib/ami-p2/memory.sqlite3"
+}

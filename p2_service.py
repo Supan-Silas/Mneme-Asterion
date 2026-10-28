@@ -1,0 +1,89 @@
+"""HTTP adapter for the evaluated P2-P. No benchmark runner/targets loaded."""
+import json
+import os
+import logging
+from fastapi import Header, HTTPException
+from app import config, llm
+from mneme_e import service as original, raw_store
+from memory_benchmark.pipeline.context import GPTTokenizer
+from e_core.methods import raw_records
+from repair_quotes import generate_r1q
+from state_policy import generate_state_policy
+
+app = original.app
+METHOD = 'ScopedStateV4' if os.environ.get('P2_SCOPED_STATE', '0') == '1' else 'P2'
+app.title = 'Mneme-Asterion ' + METHOD
+app.version = 'scoped-state-v4-review-rc1-20261026' if METHOD == 'ScopedStateV4' else 'p2-p-20261024'
+app.router.routes[:] = [r for r in app.router.routes if getattr(r, 'path', '') != '/search']
+
+def call(prompt, stage, valid):
+    # Same system/user boundary, schema retries and recovery as evaluated P2.
+    header, payload = prompt.rsplit('\n', 1)
+    value = None
+    for attempt in range(3):
+        llm.counters['calls'] += 1
+        try:
+            with llm._gate:
+                reply = llm._get_client().chat.completions.create(
+                    model=config.LLM_MODEL,
+                    messages=[{'role': 'system', 'content': header}, {'role': 'user', 'content': payload}],
+                    seed=17, temperature=0, max_tokens=1000 if stage == 'P2P_relevance' else 8192,
+                    response_format={'type': 'json_object'})
+        except Exception as exc:
+            llm.counters['failures'] += 1
+            mapped = llm.transient(exc)
+            if mapped is not None:
+                raise mapped from exc
+            raise
+        text = (reply.choices[0].message.content or '').strip()
+        if text.startswith('```') and text.endswith('```'):
+            text = text.split('\n', 1)[1].rsplit('```', 1)[0].strip()
+        try:
+            value = json.loads(text)
+            valid(value)
+            return value
+        except (ValueError, KeyError, AssertionError, TypeError):
+            if attempt == 2:
+                if not hasattr(valid, 'recover'):
+                    raise
+                value = valid.recover(value)
+                valid(value)
+                return value
+
+def encode_result(evidence, originals, top_k):
+    # Always use transformed text: P2 can redact or prefix an existing ID.
+    # Reusing the original object by ID would silently undo withdrawal filtering.
+    by_id = {str(x['id']): x for x in originals}
+    return [{'id': x['id'], 'content': x['text'],
+             'score': by_id.get(x['id'], {}).get('score', 1.0),
+             'source_ids': list(x.get('source_ids', []))}
+            for x in evidence[:min(100, max(0, top_k))]]
+
+@app.post('/search')
+def search(request: original.native.SearchRequest,
+           authorization: str | None = Header(default=None),
+           x_api_key: str | None = Header(default=None)):
+    original.native.check_auth(authorization, x_api_key)
+    if request.top_k <= 0:
+        return {'data': [], 'method': METHOD}
+    with original.user_lock(request.user_id):
+        history = raw_store.history(request.user_id)
+        baseline = original.native.search(request.model_copy(update={'top_k': 100}), authorization, x_api_key)
+        base = [{'id': str(x['id']), 'text': x['content'], 'source_ids': x.get('source_ids', []),
+                 'timestamp': None, 'metadata': {}} for x in baseline['data']]
+        if not history['sessions']:
+            return {'data': baseline['data'][:min(100, request.top_k)], 'method': METHOD}
+        tok = GPTTokenizer('gpt-4o-mini')
+        raw = raw_records(history, tok.count)
+        try:
+            evidence, _ = generate_r1q(request.query, base, raw, call, tok)
+            evidence, _ = generate_state_policy(request.query, evidence, raw, call, tok)
+            if os.environ.get('P2_SCOPED_STATE', '0') == '1':
+                from scoped_adapter import apply as apply_scoped_state
+                evidence, _ = apply_scoped_state(request.query, evidence, raw, config.DB_PATH, request.user_id, tok.count)
+        except llm.UpstreamUnavailable:
+            raise
+        except Exception as exc:
+            logging.getLogger('p2').error('P2 transform failed: %s', type(exc).__name__)
+            raise HTTPException(502, 'P2 transformation failed; retry request') from exc
+        return {'data': encode_result(evidence, baseline['data'], request.top_k), 'method': METHOD}

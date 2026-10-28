@@ -1,0 +1,11 @@
+{
+  "changes": {
+    "p2_service.py": {
+      "before": "0261c6125302182828d1d3dd68414b0f4273542d94b0570db6d155293751aefb",
+      "after": "13eb42c67de494a8dc4e23126bd02313d42aa55bc9b4b8be8e39b87c82bb39a9",
+      "reason": "API response and OpenAPI version identify ScopedStateV4 when enabled; transformation logic unchanged"
+    }
+  },
+  "launch": "v4 enabled by default; explicit 0 permits P2; bundled tokenizer cache; distinct default DB",
+  "state_algorithm_changed": false
+}

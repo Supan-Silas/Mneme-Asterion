@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-24",
+  "source": "read-only SSH /opt/aml/p2-20261024",
+  "service": "ami-p2.service active",
+  "matches_export": true,
+  "sha256": {
+    "p2_service.py": "c67bcced982ffb2cf7ab4886e281b8d506ff9361cfd2491273aafad20390e172",
+    "repair_quotes.py": "222170b8542a3558cf7d2f2a68aff089017e3583a171c4457b00a96f592ba610",
+    "repair_v1.py": "8e74a6eafa1b0cc19500efa278e71ae4bf8b6b504347c9fd4b9e4e0fa546728d",
+    "variants.py": "d5cf2cde7392b7a3c389076552f52be6fe27ad7f3e37d776df3f7b3eb3d28f4b",
+    "state_policy.py": "53ff2c23ce6515d83eae2e076c9315bb030eb8ce35052353e0f074f671177396",
+    "state_withdrawal.py": "803938da999eea39dc391703e5da9f535aa552c2bd24fca9e7f4b87ff5d8c20a",
+    "state_withdrawal_v2.py": "11e67915fa4872e32da511ea49a5699cf8a7b5420e8d425699ec4b91c8c730a3"
+  }
+}

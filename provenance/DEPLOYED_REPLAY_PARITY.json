@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "api_calls": 0,
+  "cases": [
+    {
+      "qa_id": "conv-43#q0058",
+      "state_path": false,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "conv-43#q0112",
+      "state_path": false,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "conv-43#q0018",
+      "state_path": false,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "conv-43#q0022",
+      "state_path": false,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "conv-43#q0017",
+      "state_path": false,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "conv-43#q0023",
+      "state_path": false,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "conv-43#q0001",
+      "state_path": false,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "conv-43#q0046",
+      "state_path": false,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1695",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1696",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1680",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1697",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1677",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1683",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1694",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1687",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1682",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1690",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1700",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1689",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1681",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1698",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1686",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    },
+    {
+      "qa_id": "personamem_v2:1679",
+      "state_path": true,
+      "exact_evidence_and_prompt_parity": true
+    }
+  ]
+}

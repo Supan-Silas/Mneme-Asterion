@@ -1,0 +1,131 @@
+{
+  "same": [
+    "state_policy.py",
+    "intent_scope_v5.py",
+    "provenance_v4.py",
+    "state_scoped_v3.py",
+    "repair_quotes.py",
+    "state_scoped.py",
+    "state_projection_v4.py",
+    "scoped_adapter.py",
+    "launch.py",
+    "variants.py",
+    "p2_service.py",
+    "repair_v1.py",
+    "state_finalize_v6.py",
+    "state_withdrawal.py",
+    "state_scoped_v1.py",
+    "state_withdrawal_v2.py",
+    "app/rerank.py",
+    "app/__init__.py",
+    "app/updates.py",
+    "app/dci.py",
+    "app/config.py",
+    "app/embed.py",
+    "app/main.py",
+    "app/llm.py",
+    "app/store.py",
+    "mneme_e/serve.py",
+    "mneme_e/__init__.py",
+    "mneme_e/model.py",
+    "mneme_e/context.py",
+    "mneme_e/service.py",
+    "mneme_e/raw_store.py",
+    "reproduction/serve.py",
+    "reproduction/check_http.py",
+    "reproduction/__init__.py",
+    "reproduction/diagnose_model.py",
+    "reproduction/run_tests.py",
+    "reproduction/real_minimal.py",
+    "reproduction/native_embedding.py",
+    "e_core/__init__.py",
+    "e_core/base_tools.py",
+    "e_core/methods.py"
+  ],
+  "differences": [
+    {
+      "file": "test_release.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "verify_candidate.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "test_state_echo.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "test_publication_regressions.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "test_state_policy.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "test_state_v4.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "test_state_withdrawal.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "test_repair_v1.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "test_http.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "test_scoped.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "test_quote_repair.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "reproduction/test_real_minimal.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "reproduction/test_native_embedding.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "tools/verify_release.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "tools/smoke.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "evaluation/test_pipeline_offline.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "evaluation/run_prepared.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "memory_benchmark/__init__.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "memory_benchmark/schemas.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "memory_benchmark/pipeline/__init__.py",
+      "status": "not_in_native_bundle"
+    },
+    {
+      "file": "memory_benchmark/pipeline/context.py",
+      "status": "not_in_native_bundle"
+    }
+  ]
+}

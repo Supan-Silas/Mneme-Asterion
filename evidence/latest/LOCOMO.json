@@ -1,0 +1,194 @@
+{
+  "time": 1792987581.1263258,
+  "rows": [
+    {
+      "method": "AMI",
+      "original_conditions_correct": 712,
+      "original_conditions_accuracy": 82.69454123112659,
+      "original_conditions": "Frozen AMI full-history DB; original AMI retrieval rerun",
+      "fresh_independent_correct": 715,
+      "fresh_independent_accuracy": 83.04297328687572,
+      "independent_reference_already_in_original_run": false,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "InvMem",
+      "original_conditions_correct": 706,
+      "original_conditions_accuracy": 81.99767711962834,
+      "original_conditions": "New native per-history SQLite Add + hybrid retrieval",
+      "fresh_independent_correct": 706,
+      "fresh_independent_accuracy": 81.99767711962834,
+      "independent_reference_already_in_original_run": true,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "ReFind",
+      "original_conditions_correct": 694,
+      "original_conditions_accuracy": 80.60394889663182,
+      "original_conditions": "New native Add and agent retrieval",
+      "fresh_independent_correct": 694,
+      "fresh_independent_accuracy": 80.60394889663182,
+      "independent_reference_already_in_original_run": true,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "Mem0",
+      "original_conditions_correct": 667,
+      "original_conditions_accuracy": 77.46806039488966,
+      "original_conditions": "New native per-history Add and Qdrant search",
+      "fresh_independent_correct": 667,
+      "fresh_independent_accuracy": 77.46806039488966,
+      "independent_reference_already_in_original_run": true,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "TMem_no_rerank",
+      "original_conditions_correct": 685,
+      "original_conditions_accuracy": 79.55865272938443,
+      "original_conditions": "New native multi-stage build and retrieval",
+      "fresh_independent_correct": 685,
+      "fresh_independent_accuracy": 79.55865272938443,
+      "independent_reference_already_in_original_run": true,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "E",
+      "original_conditions_correct": 740,
+      "original_conditions_accuracy": 85.9465737514518,
+      "original_conditions": "Frozen E retrieval, new Answer/Judge",
+      "fresh_independent_correct": 730,
+      "fresh_independent_accuracy": 84.78513356562136,
+      "independent_reference_already_in_original_run": false,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "P2",
+      "original_conditions_correct": 743,
+      "original_conditions_accuracy": 86.29500580720092,
+      "original_conditions": "Frozen P2 retrieval, new Answer/Judge",
+      "fresh_independent_correct": 733,
+      "fresh_independent_accuracy": 85.1335656213705,
+      "independent_reference_already_in_original_run": false,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "ScopedStateV4",
+      "original_conditions_correct": 745,
+      "original_conditions_accuracy": 86.52729384436701,
+      "original_conditions": "Frozen P2 retrieval + exact v4 filter, new Answer/Judge",
+      "fresh_independent_correct": 739,
+      "fresh_independent_accuracy": 85.83042973286875,
+      "independent_reference_already_in_original_run": false,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "R1Q",
+      "original_conditions_correct": 744,
+      "original_conditions_accuracy": 86.41114982578397,
+      "original_conditions": "Frozen retrieval, new Answer/Judge",
+      "fresh_independent_correct": 730,
+      "fresh_independent_accuracy": 84.78513356562136,
+      "independent_reference_already_in_original_run": false,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "P2_QBind",
+      "original_conditions_correct": 747,
+      "original_conditions_accuracy": 86.7595818815331,
+      "original_conditions": "Frozen retrieval, new Answer/Judge",
+      "fresh_independent_correct": 737,
+      "fresh_independent_accuracy": 85.59814169570267,
+      "independent_reference_already_in_original_run": false,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "C1_fix_2",
+      "original_conditions_correct": 712,
+      "original_conditions_accuracy": 82.69454123112659,
+      "original_conditions": "Frozen AMI DB + original five-seed native adapter search",
+      "fresh_independent_correct": 701,
+      "fresh_independent_accuracy": 81.41695702671312,
+      "independent_reference_already_in_original_run": false,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "P0",
+      "original_conditions_correct": 732,
+      "original_conditions_accuracy": 85.01742160278745,
+      "original_conditions": "Frozen retrieval, new Answer/Judge",
+      "fresh_independent_correct": 743,
+      "fresh_independent_accuracy": 86.29500580720092,
+      "independent_reference_already_in_original_run": false,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "P1",
+      "original_conditions_correct": 742,
+      "original_conditions_accuracy": 86.17886178861788,
+      "original_conditions": "120 frozen retrievals; remaining queries generated with original P1 implementation",
+      "fresh_independent_correct": 736,
+      "fresh_independent_accuracy": 85.48199767711962,
+      "independent_reference_already_in_original_run": false,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "Research_D",
+      "original_conditions_correct": 705,
+      "original_conditions_accuracy": 81.88153310104529,
+      "original_conditions": "Frozen research D retrieval, new Answer/Judge",
+      "fresh_independent_correct": 714,
+      "fresh_independent_accuracy": 82.92682926829268,
+      "independent_reference_already_in_original_run": false,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "ChronoHybridMem",
+      "original_conditions_correct": 628,
+      "original_conditions_accuracy": 72.93844367015099,
+      "original_conditions": "New native per-history Add and retrieval",
+      "fresh_independent_correct": 628,
+      "fresh_independent_accuracy": 72.93844367015099,
+      "independent_reference_already_in_original_run": true,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "M_flow",
+      "original_conditions_correct": 548,
+      "original_conditions_accuracy": 63.64692218350755,
+      "original_conditions": "New native Add + memorize + episodic context retrieval",
+      "fresh_independent_correct": 548,
+      "fresh_independent_accuracy": 63.64692218350755,
+      "independent_reference_already_in_original_run": true,
+      "raw_message_control_without_learned_database": false,
+      "same861_questions": true
+    },
+    {
+      "method": "Raw_BM25",
+      "original_conditions_correct": 635,
+      "original_conditions_accuracy": 73.75145180023229,
+      "original_conditions": "Original raw-message lexical retrieval",
+      "fresh_independent_correct": null,
+      "fresh_independent_accuracy": null,
+      "independent_reference_already_in_original_run": false,
+      "raw_message_control_without_learned_database": true,
+      "same861_questions": true
+    }
+  ],
+  "reader": "same AML ranked-prefix117760,top100,mini/nativeLoCoMo-Refined Judge",
+  "note": "Original conditions include frozen-retrieval controls. The new100 libraries are independent; their differences include write/retrieve/answer/judge variation."
+}

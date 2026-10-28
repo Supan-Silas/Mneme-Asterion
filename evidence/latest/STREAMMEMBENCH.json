@@ -1,0 +1,286 @@
+{
+  "time": 1793028095.364238,
+  "methods": {
+    "AMI": {
+      "complete": true,
+      "metrics": {
+        "count": 210,
+        "fidelity": 0.919047619047619,
+        "initial_evidence_use": 0.02857142857142857,
+        "feedback_incorporation": 0.17647058823529413,
+        "feedback_incorporation_applicable_count": 204,
+        "followup_reuse": 0.0380952380952381
+      },
+      "participants": [
+        {
+          "participant": "A1_JAKE",
+          "scored": 35,
+          "complete": true,
+          "segments": 653,
+          "total_segments": 653
+        },
+        {
+          "participant": "A2_ALICE",
+          "scored": 35,
+          "complete": true,
+          "segments": 569,
+          "total_segments": 569
+        },
+        {
+          "participant": "A3_TASHA",
+          "scored": 35,
+          "complete": true,
+          "segments": 515,
+          "total_segments": 515
+        },
+        {
+          "participant": "A4_LUCIA",
+          "scored": 35,
+          "complete": true,
+          "segments": 549,
+          "total_segments": 549
+        },
+        {
+          "participant": "A5_KATRINA",
+          "scored": 35,
+          "complete": true,
+          "segments": 510,
+          "total_segments": 510
+        },
+        {
+          "participant": "A6_SHURE",
+          "scored": 35,
+          "complete": true,
+          "segments": 551,
+          "total_segments": 551
+        }
+      ],
+      "segments": 3347
+    },
+    "P2": {
+      "complete": true,
+      "metrics": {
+        "count": 210,
+        "fidelity": 0.919047619047619,
+        "initial_evidence_use": 0.02857142857142857,
+        "feedback_incorporation": 0.16176470588235295,
+        "feedback_incorporation_applicable_count": 204,
+        "followup_reuse": 0.047619047619047616
+      },
+      "participants": [
+        {
+          "participant": "A1_JAKE",
+          "scored": 35,
+          "complete": true,
+          "segments": 653,
+          "total_segments": 653
+        },
+        {
+          "participant": "A2_ALICE",
+          "scored": 35,
+          "complete": true,
+          "segments": 569,
+          "total_segments": 569
+        },
+        {
+          "participant": "A3_TASHA",
+          "scored": 35,
+          "complete": true,
+          "segments": 515,
+          "total_segments": 515
+        },
+        {
+          "participant": "A4_LUCIA",
+          "scored": 35,
+          "complete": true,
+          "segments": 549,
+          "total_segments": 549
+        },
+        {
+          "participant": "A5_KATRINA",
+          "scored": 35,
+          "complete": true,
+          "segments": 510,
+          "total_segments": 510
+        },
+        {
+          "participant": "A6_SHURE",
+          "scored": 35,
+          "complete": true,
+          "segments": 551,
+          "total_segments": 551
+        }
+      ],
+      "segments": 3347
+    },
+    "ScopedStateV4": {
+      "complete": true,
+      "metrics": {
+        "count": 210,
+        "fidelity": 0.9142857142857143,
+        "initial_evidence_use": 0.02857142857142857,
+        "feedback_incorporation": 0.1715686274509804,
+        "feedback_incorporation_applicable_count": 204,
+        "followup_reuse": 0.047619047619047616
+      },
+      "participants": [
+        {
+          "participant": "A1_JAKE",
+          "scored": 35,
+          "complete": true,
+          "segments": 653,
+          "total_segments": 653
+        },
+        {
+          "participant": "A2_ALICE",
+          "scored": 35,
+          "complete": true,
+          "segments": 569,
+          "total_segments": 569
+        },
+        {
+          "participant": "A3_TASHA",
+          "scored": 35,
+          "complete": true,
+          "segments": 515,
+          "total_segments": 515
+        },
+        {
+          "participant": "A4_LUCIA",
+          "scored": 35,
+          "complete": true,
+          "segments": 549,
+          "total_segments": 549
+        },
+        {
+          "participant": "A5_KATRINA",
+          "scored": 35,
+          "complete": true,
+          "segments": 510,
+          "total_segments": 510
+        },
+        {
+          "participant": "A6_SHURE",
+          "scored": 35,
+          "complete": true,
+          "segments": 551,
+          "total_segments": 551
+        }
+      ],
+      "segments": 3347
+    },
+    "InvMem": {
+      "complete": true,
+      "metrics": {
+        "count": 210,
+        "fidelity": 0.9285714285714286,
+        "initial_evidence_use": 0.04285714285714286,
+        "feedback_incorporation": 0.18407960199004975,
+        "feedback_incorporation_applicable_count": 201,
+        "followup_reuse": 0.02857142857142857
+      },
+      "participants": [
+        {
+          "participant": "A1_JAKE",
+          "scored": 35,
+          "complete": true,
+          "segments": 653,
+          "total_segments": 653
+        },
+        {
+          "participant": "A2_ALICE",
+          "scored": 35,
+          "complete": true,
+          "segments": 569,
+          "total_segments": 569
+        },
+        {
+          "participant": "A3_TASHA",
+          "scored": 35,
+          "complete": true,
+          "segments": 515,
+          "total_segments": 515
+        },
+        {
+          "participant": "A4_LUCIA",
+          "scored": 35,
+          "complete": true,
+          "segments": 549,
+          "total_segments": 549
+        },
+        {
+          "participant": "A5_KATRINA",
+          "scored": 35,
+          "complete": true,
+          "segments": 510,
+          "total_segments": 510
+        },
+        {
+          "participant": "A6_SHURE",
+          "scored": 35,
+          "complete": true,
+          "segments": 551,
+          "total_segments": 551
+        }
+      ],
+      "segments": 3347
+    },
+    "ReFind": {
+      "complete": true,
+      "metrics": {
+        "count": 210,
+        "fidelity": 0.9380952380952381,
+        "initial_evidence_use": 0.04285714285714286,
+        "feedback_incorporation": 0.17412935323383086,
+        "feedback_incorporation_applicable_count": 201,
+        "followup_reuse": 0.03333333333333333
+      },
+      "participants": [
+        {
+          "participant": "A1_JAKE",
+          "scored": 35,
+          "complete": true,
+          "segments": 653,
+          "total_segments": 653
+        },
+        {
+          "participant": "A2_ALICE",
+          "scored": 35,
+          "complete": true,
+          "segments": 569,
+          "total_segments": 569
+        },
+        {
+          "participant": "A3_TASHA",
+          "scored": 35,
+          "complete": true,
+          "segments": 515,
+          "total_segments": 515
+        },
+        {
+          "participant": "A4_LUCIA",
+          "scored": 35,
+          "complete": true,
+          "segments": 549,
+          "total_segments": 549
+        },
+        {
+          "participant": "A5_KATRINA",
+          "scored": 35,
+          "complete": true,
+          "segments": 510,
+          "total_segments": 510
+        },
+        {
+          "participant": "A6_SHURE",
+          "scored": 35,
+          "complete": true,
+          "segments": 551,
+          "total_segments": 551
+        }
+      ],
+      "segments": 3347
+    }
+  },
+  "complete": true
+}

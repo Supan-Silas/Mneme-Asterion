@@ -1,0 +1,8 @@
+{
+  "tls_verified": true,
+  "not_after": "Nov  3 21:03:38 2026 GMT",
+  "http_status": 200,
+  "health": {
+    "status": "ok"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "time": 1792990569.6865845,
+  "upstream_offline_tests": 211,
+  "candidate_offline_tests": 53,
+  "actual_namespace_concurrent_test_requests": 80,
+  "real_method_scores_completed": 5,
+  "identical_frozen_database_origins": true,
+  "real_call_states": {
+    "settled": 31
+  },
+  "note": "Integration checks only; one-question preflight is not a comparative method score"
+}

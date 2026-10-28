@@ -1,0 +1,6386 @@
+[
+  {
+    "seed": 17,
+    "history": "conv-43",
+    "arm": "B0",
+    "questions": 46,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "conv-43",
+    "arm": "E",
+    "questions": 46,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "conv-43",
+    "arm": "R1Q",
+    "questions": 46,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "conv-43",
+    "arm": "P2",
+    "questions": 46,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "conv-47",
+    "arm": "B0",
+    "questions": 48,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "conv-47",
+    "arm": "E",
+    "questions": 48,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "conv-47",
+    "arm": "R1Q",
+    "questions": 48,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "conv-47",
+    "arm": "P2",
+    "questions": 48,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "gpt4_ab202e7f",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "gpt4_ab202e7f",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "gpt4_ab202e7f",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "gpt4_ab202e7f",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "d24813b1",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "d24813b1",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "d24813b1",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "d24813b1",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "71017277",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "71017277",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "71017277",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "71017277",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "gpt4_b4a80587",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "gpt4_b4a80587",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "gpt4_b4a80587",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "gpt4_b4a80587",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "9ea5eabc",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "9ea5eabc",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "9ea5eabc",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "9ea5eabc",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "618f13b2",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "618f13b2",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "618f13b2",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "618f13b2",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "0ef28c08-d6ce-4862-a52e-88f001bd7159",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "0ef28c08-d6ce-4862-a52e-88f001bd7159",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "0ef28c08-d6ce-4862-a52e-88f001bd7159",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "0ef28c08-d6ce-4862-a52e-88f001bd7159",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "5ed0a3e7-cbed-453f-a68d-25e67ac3ebc3",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "5ed0a3e7-cbed-453f-a68d-25e67ac3ebc3",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "5ed0a3e7-cbed-453f-a68d-25e67ac3ebc3",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "5ed0a3e7-cbed-453f-a68d-25e67ac3ebc3",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "7a0d9e8b-99c2-45db-8b53-ac8a8da817e0",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "7a0d9e8b-99c2-45db-8b53-ac8a8da817e0",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "7a0d9e8b-99c2-45db-8b53-ac8a8da817e0",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "7a0d9e8b-99c2-45db-8b53-ac8a8da817e0",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "2eeb2c5e-4c65-4870-bba4-88b741d90b0a",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "2eeb2c5e-4c65-4870-bba4-88b741d90b0a",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "2eeb2c5e-4c65-4870-bba4-88b741d90b0a",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "2eeb2c5e-4c65-4870-bba4-88b741d90b0a",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "b0ee7525-b26b-4f4d-81b1-e5aad115fa1e",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "b0ee7525-b26b-4f4d-81b1-e5aad115fa1e",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "b0ee7525-b26b-4f4d-81b1-e5aad115fa1e",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "b0ee7525-b26b-4f4d-81b1-e5aad115fa1e",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "1244a4d4-6f1a-4c6c-a617-c2826b8317cd",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "1244a4d4-6f1a-4c6c-a617-c2826b8317cd",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "1244a4d4-6f1a-4c6c-a617-c2826b8317cd",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "1244a4d4-6f1a-4c6c-a617-c2826b8317cd",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "39c81bf0-3e69-41aa-86d1-fa3bc1309bc3",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "39c81bf0-3e69-41aa-86d1-fa3bc1309bc3",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "39c81bf0-3e69-41aa-86d1-fa3bc1309bc3",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "39c81bf0-3e69-41aa-86d1-fa3bc1309bc3",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "5dff48b3-a20c-4b41-aaba-1d299f4365e5",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "5dff48b3-a20c-4b41-aaba-1d299f4365e5",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "5dff48b3-a20c-4b41-aaba-1d299f4365e5",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "5dff48b3-a20c-4b41-aaba-1d299f4365e5",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "17:1ee4be06b43a991eeb7c78772fdf2a1b795f46f336b5fc46a5c711d07cc1c052:prefix:103",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "17:1ee4be06b43a991eeb7c78772fdf2a1b795f46f336b5fc46a5c711d07cc1c052:prefix:103",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "17:1ee4be06b43a991eeb7c78772fdf2a1b795f46f336b5fc46a5c711d07cc1c052:prefix:103",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "17:1ee4be06b43a991eeb7c78772fdf2a1b795f46f336b5fc46a5c711d07cc1c052:prefix:103",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "17:40027b883505bfc53148a5b86c418f9374c3bdd49ebd5160d8f6901cfca51d06:prefix:163",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "17:40027b883505bfc53148a5b86c418f9374c3bdd49ebd5160d8f6901cfca51d06:prefix:163",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "17:40027b883505bfc53148a5b86c418f9374c3bdd49ebd5160d8f6901cfca51d06:prefix:163",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "17:40027b883505bfc53148a5b86c418f9374c3bdd49ebd5160d8f6901cfca51d06:prefix:163",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "866:data/chat_history_32k/chat_history_250913_163134_persona866.json",
+    "arm": "B0",
+    "questions": 23,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "866:data/chat_history_32k/chat_history_250913_163134_persona866.json",
+    "arm": "E",
+    "questions": 23,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "866:data/chat_history_32k/chat_history_250913_163134_persona866.json",
+    "arm": "R1Q",
+    "questions": 23,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "866:data/chat_history_32k/chat_history_250913_163134_persona866.json",
+    "arm": "P2",
+    "questions": 23,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "543:data/chat_history_32k/chat_history_250913_163134_persona543.json",
+    "arm": "B0",
+    "questions": 32,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "543:data/chat_history_32k/chat_history_250913_163134_persona543.json",
+    "arm": "E",
+    "questions": 32,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "543:data/chat_history_32k/chat_history_250913_163134_persona543.json",
+    "arm": "R1Q",
+    "questions": 32,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "543:data/chat_history_32k/chat_history_250913_163134_persona543.json",
+    "arm": "P2",
+    "questions": 32,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "100K:12",
+    "arm": "B0",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "100K:12",
+    "arm": "E",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "100K:12",
+    "arm": "R1Q",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "100K:12",
+    "arm": "P2",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "100K:19",
+    "arm": "B0",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "100K:19",
+    "arm": "E",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "100K:19",
+    "arm": "R1Q",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 17,
+    "history": "100K:19",
+    "arm": "P2",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "conv-30",
+    "arm": "B0",
+    "questions": 34,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "conv-30",
+    "arm": "E",
+    "questions": 34,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "conv-30",
+    "arm": "R1Q",
+    "questions": 34,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "conv-30",
+    "arm": "P2",
+    "questions": 34,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "conv-43",
+    "arm": "B0",
+    "questions": 50,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "conv-43",
+    "arm": "E",
+    "questions": 50,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "conv-43",
+    "arm": "R1Q",
+    "questions": 50,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "conv-43",
+    "arm": "P2",
+    "questions": 50,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "726462e0",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "726462e0",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "726462e0",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "726462e0",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "edced276_abs",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "edced276_abs",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "edced276_abs",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "edced276_abs",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "cc06de0d",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "cc06de0d",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "cc06de0d",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "cc06de0d",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "e6041065",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "e6041065",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "e6041065",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "e6041065",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "e56a43b9",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "e56a43b9",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "e56a43b9",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "e56a43b9",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "89941a94",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "89941a94",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "89941a94",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "89941a94",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "28bcfaac",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "28bcfaac",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "28bcfaac",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "28bcfaac",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "5b41183e-8fd3-4ebf-bba0-acdf3ee536f1",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "5b41183e-8fd3-4ebf-bba0-acdf3ee536f1",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "5b41183e-8fd3-4ebf-bba0-acdf3ee536f1",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "5b41183e-8fd3-4ebf-bba0-acdf3ee536f1",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "89ce2541-c76a-4304-9154-9dd6da0c6271",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "89ce2541-c76a-4304-9154-9dd6da0c6271",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "89ce2541-c76a-4304-9154-9dd6da0c6271",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "89ce2541-c76a-4304-9154-9dd6da0c6271",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "47d3b0ac-d7bd-40e7-a4ac-b7566e042cf5",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "47d3b0ac-d7bd-40e7-a4ac-b7566e042cf5",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "47d3b0ac-d7bd-40e7-a4ac-b7566e042cf5",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "47d3b0ac-d7bd-40e7-a4ac-b7566e042cf5",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "a870d4d1-6ff4-42b4-a577-2432d9ce2a3e",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "a870d4d1-6ff4-42b4-a577-2432d9ce2a3e",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "a870d4d1-6ff4-42b4-a577-2432d9ce2a3e",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "a870d4d1-6ff4-42b4-a577-2432d9ce2a3e",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "630d43c8-c1f0-4078-8865-1a5176337caf",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "630d43c8-c1f0-4078-8865-1a5176337caf",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "630d43c8-c1f0-4078-8865-1a5176337caf",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "630d43c8-c1f0-4078-8865-1a5176337caf",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "0bcbe1b1-7e5d-4e68-a1ad-63e22642a7f6",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "0bcbe1b1-7e5d-4e68-a1ad-63e22642a7f6",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "0bcbe1b1-7e5d-4e68-a1ad-63e22642a7f6",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "0bcbe1b1-7e5d-4e68-a1ad-63e22642a7f6",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "1139c67c-1681-4ee8-abda-7bea490bbc64",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "1139c67c-1681-4ee8-abda-7bea490bbc64",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "1139c67c-1681-4ee8-abda-7bea490bbc64",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "1139c67c-1681-4ee8-abda-7bea490bbc64",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "f1b2e340-2ae4-41df-9711-371bc43bd7ca",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "f1b2e340-2ae4-41df-9711-371bc43bd7ca",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "f1b2e340-2ae4-41df-9711-371bc43bd7ca",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "f1b2e340-2ae4-41df-9711-371bc43bd7ca",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "17:40027b883505bfc53148a5b86c418f9374c3bdd49ebd5160d8f6901cfca51d06:prefix:163",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "17:40027b883505bfc53148a5b86c418f9374c3bdd49ebd5160d8f6901cfca51d06:prefix:163",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "17:40027b883505bfc53148a5b86c418f9374c3bdd49ebd5160d8f6901cfca51d06:prefix:163",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "17:40027b883505bfc53148a5b86c418f9374c3bdd49ebd5160d8f6901cfca51d06:prefix:163",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "2:1621543a17bd464feaf4ba73d83d579d0160987536bde8725ac29131ecf235c3:prefix:106",
+    "arm": "B0",
+    "questions": 2,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "2:1621543a17bd464feaf4ba73d83d579d0160987536bde8725ac29131ecf235c3:prefix:106",
+    "arm": "E",
+    "questions": 2,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "2:1621543a17bd464feaf4ba73d83d579d0160987536bde8725ac29131ecf235c3:prefix:106",
+    "arm": "R1Q",
+    "questions": 2,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "2:1621543a17bd464feaf4ba73d83d579d0160987536bde8725ac29131ecf235c3:prefix:106",
+    "arm": "P2",
+    "questions": 2,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "635:data/chat_history_32k/chat_history_250913_163134_persona635.json",
+    "arm": "B0",
+    "questions": 34,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "635:data/chat_history_32k/chat_history_250913_163134_persona635.json",
+    "arm": "E",
+    "questions": 34,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "635:data/chat_history_32k/chat_history_250913_163134_persona635.json",
+    "arm": "R1Q",
+    "questions": 34,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "635:data/chat_history_32k/chat_history_250913_163134_persona635.json",
+    "arm": "P2",
+    "questions": 34,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "670:data/chat_history_32k/chat_history_250913_163134_persona670.json",
+    "arm": "B0",
+    "questions": 27,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "670:data/chat_history_32k/chat_history_250913_163134_persona670.json",
+    "arm": "E",
+    "questions": 27,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "670:data/chat_history_32k/chat_history_250913_163134_persona670.json",
+    "arm": "R1Q",
+    "questions": 27,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "670:data/chat_history_32k/chat_history_250913_163134_persona670.json",
+    "arm": "P2",
+    "questions": 27,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "100K:12",
+    "arm": "B0",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "100K:12",
+    "arm": "E",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "100K:12",
+    "arm": "R1Q",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "100K:12",
+    "arm": "P2",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "100K:17",
+    "arm": "B0",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "100K:17",
+    "arm": "E",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "100K:17",
+    "arm": "R1Q",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 18,
+    "history": "100K:17",
+    "arm": "P2",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "conv-43",
+    "arm": "B0",
+    "questions": 49,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "conv-43",
+    "arm": "E",
+    "questions": 49,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "conv-43",
+    "arm": "R1Q",
+    "questions": 49,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "conv-43",
+    "arm": "P2",
+    "questions": 49,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "conv-49",
+    "arm": "B0",
+    "questions": 42,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "conv-49",
+    "arm": "E",
+    "questions": 42,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "conv-49",
+    "arm": "R1Q",
+    "questions": 42,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "conv-49",
+    "arm": "P2",
+    "questions": 42,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "3a704032",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "3a704032",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "3a704032",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "3a704032",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "d905b33f",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "d905b33f",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "d905b33f",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "d905b33f",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "gpt4_fa19884c",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "gpt4_fa19884c",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "gpt4_fa19884c",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "gpt4_fa19884c",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "gpt4_fe651585_abs",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "gpt4_fe651585_abs",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "gpt4_fe651585_abs",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "gpt4_fe651585_abs",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "6aeb4375",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "6aeb4375",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "6aeb4375",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "6aeb4375",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "7a87bd0c",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "7a87bd0c",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "7a87bd0c",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "7a87bd0c",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "5d5899e9-7c5a-43dd-b54d-1779b45a9b98",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "5d5899e9-7c5a-43dd-b54d-1779b45a9b98",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "5d5899e9-7c5a-43dd-b54d-1779b45a9b98",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "5d5899e9-7c5a-43dd-b54d-1779b45a9b98",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "b44b8256-c4c9-406e-aa41-dd3a6ad5bbad",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "b44b8256-c4c9-406e-aa41-dd3a6ad5bbad",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "b44b8256-c4c9-406e-aa41-dd3a6ad5bbad",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "b44b8256-c4c9-406e-aa41-dd3a6ad5bbad",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "d8a4aa00-35a0-4bf1-b23a-9a7db9e94583",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "d8a4aa00-35a0-4bf1-b23a-9a7db9e94583",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "d8a4aa00-35a0-4bf1-b23a-9a7db9e94583",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "d8a4aa00-35a0-4bf1-b23a-9a7db9e94583",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "22a4b97e-76d1-4482-bfd3-69aff7bdbc2e",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "22a4b97e-76d1-4482-bfd3-69aff7bdbc2e",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "22a4b97e-76d1-4482-bfd3-69aff7bdbc2e",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "22a4b97e-76d1-4482-bfd3-69aff7bdbc2e",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "343e6c1c-56d4-4611-9474-708b641cede9",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "343e6c1c-56d4-4611-9474-708b641cede9",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "343e6c1c-56d4-4611-9474-708b641cede9",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "343e6c1c-56d4-4611-9474-708b641cede9",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "6ef05dd2-9ad7-4e03-8700-919c04f2f2d0",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "6ef05dd2-9ad7-4e03-8700-919c04f2f2d0",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "6ef05dd2-9ad7-4e03-8700-919c04f2f2d0",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "6ef05dd2-9ad7-4e03-8700-919c04f2f2d0",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "1169adaf-ad74-4afd-9eca-8cee2afb52b0",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "1169adaf-ad74-4afd-9eca-8cee2afb52b0",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "1169adaf-ad74-4afd-9eca-8cee2afb52b0",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "1169adaf-ad74-4afd-9eca-8cee2afb52b0",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "b1a00198-d785-4bb9-aff3-e6bf74734bd4",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "b1a00198-d785-4bb9-aff3-e6bf74734bd4",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "b1a00198-d785-4bb9-aff3-e6bf74734bd4",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "b1a00198-d785-4bb9-aff3-e6bf74734bd4",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "6:8c336cac503ae78c7fe58a6aef0965963041cd579d1a885db4709293b1853829:prefix:197",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "6:8c336cac503ae78c7fe58a6aef0965963041cd579d1a885db4709293b1853829:prefix:197",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "6:8c336cac503ae78c7fe58a6aef0965963041cd579d1a885db4709293b1853829:prefix:197",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "6:8c336cac503ae78c7fe58a6aef0965963041cd579d1a885db4709293b1853829:prefix:197",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "15:5f9be905f1374d0906caf04903eebe4f027af9d3d36acd2fef957928864bd8e6:prefix:135",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "15:5f9be905f1374d0906caf04903eebe4f027af9d3d36acd2fef957928864bd8e6:prefix:135",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "15:5f9be905f1374d0906caf04903eebe4f027af9d3d36acd2fef957928864bd8e6:prefix:135",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "15:5f9be905f1374d0906caf04903eebe4f027af9d3d36acd2fef957928864bd8e6:prefix:135",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "499:data/chat_history_32k/chat_history_250913_163134_persona499.json",
+    "arm": "B0",
+    "questions": 21,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "499:data/chat_history_32k/chat_history_250913_163134_persona499.json",
+    "arm": "E",
+    "questions": 21,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "499:data/chat_history_32k/chat_history_250913_163134_persona499.json",
+    "arm": "R1Q",
+    "questions": 21,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "499:data/chat_history_32k/chat_history_250913_163134_persona499.json",
+    "arm": "P2",
+    "questions": 21,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "168:data/chat_history_32k/chat_history_250913_163134_persona168.json",
+    "arm": "B0",
+    "questions": 32,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "168:data/chat_history_32k/chat_history_250913_163134_persona168.json",
+    "arm": "E",
+    "questions": 32,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "168:data/chat_history_32k/chat_history_250913_163134_persona168.json",
+    "arm": "R1Q",
+    "questions": 32,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "168:data/chat_history_32k/chat_history_250913_163134_persona168.json",
+    "arm": "P2",
+    "questions": 32,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "100K:1",
+    "arm": "B0",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "100K:1",
+    "arm": "E",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "100K:1",
+    "arm": "R1Q",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "100K:1",
+    "arm": "P2",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "100K:9",
+    "arm": "B0",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "100K:9",
+    "arm": "E",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "100K:9",
+    "arm": "R1Q",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 19,
+    "history": "100K:9",
+    "arm": "P2",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "conv-44",
+    "arm": "B0",
+    "questions": 26,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "conv-44",
+    "arm": "E",
+    "questions": 26,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "conv-44",
+    "arm": "R1Q",
+    "questions": 26,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "conv-44",
+    "arm": "P2",
+    "questions": 26,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "conv-47",
+    "arm": "B0",
+    "questions": 59,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "conv-47",
+    "arm": "E",
+    "questions": 59,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "conv-47",
+    "arm": "R1Q",
+    "questions": 59,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "conv-47",
+    "arm": "P2",
+    "questions": 59,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "gpt4_f2262a51",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "gpt4_f2262a51",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "gpt4_f2262a51",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "gpt4_f2262a51",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "10d9b85a",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "10d9b85a",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "10d9b85a",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "10d9b85a",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "a4996e51",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "a4996e51",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "a4996e51",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "a4996e51",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "3c1045c8",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "3c1045c8",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "3c1045c8",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "3c1045c8",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "21d02d0d",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "21d02d0d",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "21d02d0d",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "21d02d0d",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "09ba9854_abs",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "09ba9854_abs",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "09ba9854_abs",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "09ba9854_abs",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "0bc8ad93",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "0bc8ad93",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "0bc8ad93",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "0bc8ad93",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "3be82528-06f6-4289-80dd-9fce6cbf2282",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "3be82528-06f6-4289-80dd-9fce6cbf2282",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "3be82528-06f6-4289-80dd-9fce6cbf2282",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "3be82528-06f6-4289-80dd-9fce6cbf2282",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "b430ffea-b394-4e94-844b-6d20ed7f99db",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "b430ffea-b394-4e94-844b-6d20ed7f99db",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "b430ffea-b394-4e94-844b-6d20ed7f99db",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "b430ffea-b394-4e94-844b-6d20ed7f99db",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "d4058e18-3c4b-4676-a272-73f13709a5d9",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "d4058e18-3c4b-4676-a272-73f13709a5d9",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "d4058e18-3c4b-4676-a272-73f13709a5d9",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "d4058e18-3c4b-4676-a272-73f13709a5d9",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "1c37eff5-404b-417a-83c3-2ed3842088d6",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "1c37eff5-404b-417a-83c3-2ed3842088d6",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "1c37eff5-404b-417a-83c3-2ed3842088d6",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "1c37eff5-404b-417a-83c3-2ed3842088d6",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "2d7a3559-caad-458b-98bd-3c5f52b13663",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "2d7a3559-caad-458b-98bd-3c5f52b13663",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "2d7a3559-caad-458b-98bd-3c5f52b13663",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "2d7a3559-caad-458b-98bd-3c5f52b13663",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "1d88348d-a80f-43e7-870a-a2d5a249823a",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "1d88348d-a80f-43e7-870a-a2d5a249823a",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "1d88348d-a80f-43e7-870a-a2d5a249823a",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "1d88348d-a80f-43e7-870a-a2d5a249823a",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "c57fb33a-20bc-4e6c-a3d9-734d573fabd7",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "c57fb33a-20bc-4e6c-a3d9-734d573fabd7",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "c57fb33a-20bc-4e6c-a3d9-734d573fabd7",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "c57fb33a-20bc-4e6c-a3d9-734d573fabd7",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "35bbeb01-d320-47da-b28f-c5c3596dcc49",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "35bbeb01-d320-47da-b28f-c5c3596dcc49",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "35bbeb01-d320-47da-b28f-c5c3596dcc49",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "35bbeb01-d320-47da-b28f-c5c3596dcc49",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "4:ea6147f6dc11130b410e00146e314d9370b7fff04f994639c4a3d46ce1255e64:prefix:104",
+    "arm": "B0",
+    "questions": 2,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "4:ea6147f6dc11130b410e00146e314d9370b7fff04f994639c4a3d46ce1255e64:prefix:104",
+    "arm": "E",
+    "questions": 2,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "4:ea6147f6dc11130b410e00146e314d9370b7fff04f994639c4a3d46ce1255e64:prefix:104",
+    "arm": "R1Q",
+    "questions": 2,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "4:ea6147f6dc11130b410e00146e314d9370b7fff04f994639c4a3d46ce1255e64:prefix:104",
+    "arm": "P2",
+    "questions": 2,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "11:7860e54f4cee5267176f112e951a7796b199e833227c43426272c210d2f1bf42:prefix:160",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "11:7860e54f4cee5267176f112e951a7796b199e833227c43426272c210d2f1bf42:prefix:160",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "11:7860e54f4cee5267176f112e951a7796b199e833227c43426272c210d2f1bf42:prefix:160",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "11:7860e54f4cee5267176f112e951a7796b199e833227c43426272c210d2f1bf42:prefix:160",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "528:data/chat_history_32k/chat_history_250913_163134_persona528.json",
+    "arm": "B0",
+    "questions": 23,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "528:data/chat_history_32k/chat_history_250913_163134_persona528.json",
+    "arm": "E",
+    "questions": 23,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "528:data/chat_history_32k/chat_history_250913_163134_persona528.json",
+    "arm": "R1Q",
+    "questions": 23,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "528:data/chat_history_32k/chat_history_250913_163134_persona528.json",
+    "arm": "P2",
+    "questions": 23,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "377:data/chat_history_32k/chat_history_250913_163134_persona377.json",
+    "arm": "B0",
+    "questions": 23,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "377:data/chat_history_32k/chat_history_250913_163134_persona377.json",
+    "arm": "E",
+    "questions": 23,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "377:data/chat_history_32k/chat_history_250913_163134_persona377.json",
+    "arm": "R1Q",
+    "questions": 23,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "377:data/chat_history_32k/chat_history_250913_163134_persona377.json",
+    "arm": "P2",
+    "questions": 23,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "332:data/chat_history_32k/chat_history_250913_163134_persona332.json",
+    "arm": "B0",
+    "questions": 14,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "332:data/chat_history_32k/chat_history_250913_163134_persona332.json",
+    "arm": "E",
+    "questions": 14,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "332:data/chat_history_32k/chat_history_250913_163134_persona332.json",
+    "arm": "R1Q",
+    "questions": 14,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "332:data/chat_history_32k/chat_history_250913_163134_persona332.json",
+    "arm": "P2",
+    "questions": 14,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "100K:1",
+    "arm": "B0",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "100K:1",
+    "arm": "E",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "100K:1",
+    "arm": "R1Q",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "100K:1",
+    "arm": "P2",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "100K:12",
+    "arm": "B0",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "100K:12",
+    "arm": "E",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "100K:12",
+    "arm": "R1Q",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 20,
+    "history": "100K:12",
+    "arm": "P2",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "conv-41",
+    "arm": "B0",
+    "questions": 44,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "conv-41",
+    "arm": "E",
+    "questions": 44,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "conv-41",
+    "arm": "R1Q",
+    "questions": 44,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "conv-41",
+    "arm": "P2",
+    "questions": 44,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "conv-44",
+    "arm": "B0",
+    "questions": 22,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "conv-44",
+    "arm": "E",
+    "questions": 22,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "conv-44",
+    "arm": "R1Q",
+    "questions": 22,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "conv-44",
+    "arm": "P2",
+    "questions": 22,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "conv-47",
+    "arm": "B0",
+    "questions": 36,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "conv-47",
+    "arm": "E",
+    "questions": 36,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "conv-47",
+    "arm": "R1Q",
+    "questions": 36,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "conv-47",
+    "arm": "P2",
+    "questions": 36,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "bc149d6b",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "bc149d6b",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "bc149d6b",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "bc149d6b",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "ba358f49_abs",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "ba358f49_abs",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "ba358f49_abs",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "ba358f49_abs",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "gpt4_213fd887",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "gpt4_213fd887",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "gpt4_213fd887",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "gpt4_213fd887",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "f685340e_abs",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "f685340e_abs",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "f685340e_abs",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "f685340e_abs",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "1bd46322-6009-4c74-8d77-daeb230e722c",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "1bd46322-6009-4c74-8d77-daeb230e722c",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "1bd46322-6009-4c74-8d77-daeb230e722c",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "1bd46322-6009-4c74-8d77-daeb230e722c",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "2dae44f5-ffcd-4106-9531-a96a8b4ed1f1",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "2dae44f5-ffcd-4106-9531-a96a8b4ed1f1",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "2dae44f5-ffcd-4106-9531-a96a8b4ed1f1",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "2dae44f5-ffcd-4106-9531-a96a8b4ed1f1",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "ac4f8d34-8ce7-44c4-84d5-5c98fdc7058a",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "ac4f8d34-8ce7-44c4-84d5-5c98fdc7058a",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "ac4f8d34-8ce7-44c4-84d5-5c98fdc7058a",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "ac4f8d34-8ce7-44c4-84d5-5c98fdc7058a",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "c312eeb1-10ef-4add-adbc-0b1fddfdd2e6",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "c312eeb1-10ef-4add-adbc-0b1fddfdd2e6",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "c312eeb1-10ef-4add-adbc-0b1fddfdd2e6",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "c312eeb1-10ef-4add-adbc-0b1fddfdd2e6",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "1348ab5e-df6a-421a-a8ed-7ed4e15fc78e",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "1348ab5e-df6a-421a-a8ed-7ed4e15fc78e",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "1348ab5e-df6a-421a-a8ed-7ed4e15fc78e",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "1348ab5e-df6a-421a-a8ed-7ed4e15fc78e",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "3c85553b-20c8-405f-9887-bf009956e66c",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "3c85553b-20c8-405f-9887-bf009956e66c",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "3c85553b-20c8-405f-9887-bf009956e66c",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "3c85553b-20c8-405f-9887-bf009956e66c",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "56e58537-c823-4950-8f25-685ec3ee3e54",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "56e58537-c823-4950-8f25-685ec3ee3e54",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "56e58537-c823-4950-8f25-685ec3ee3e54",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "56e58537-c823-4950-8f25-685ec3ee3e54",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "14b78fba-bf52-45ad-a74c-dae6141c373d",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "14b78fba-bf52-45ad-a74c-dae6141c373d",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "14b78fba-bf52-45ad-a74c-dae6141c373d",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "14b78fba-bf52-45ad-a74c-dae6141c373d",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "8:3cc19ddf369632cd2b14888f59d787245be29268ed480ccb6b2bd5df8ef8f95b:prefix:163",
+    "arm": "B0",
+    "questions": 8,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "8:3cc19ddf369632cd2b14888f59d787245be29268ed480ccb6b2bd5df8ef8f95b:prefix:163",
+    "arm": "E",
+    "questions": 8,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "8:3cc19ddf369632cd2b14888f59d787245be29268ed480ccb6b2bd5df8ef8f95b:prefix:163",
+    "arm": "R1Q",
+    "questions": 8,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "8:3cc19ddf369632cd2b14888f59d787245be29268ed480ccb6b2bd5df8ef8f95b:prefix:163",
+    "arm": "P2",
+    "questions": 8,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "2:1621543a17bd464feaf4ba73d83d579d0160987536bde8725ac29131ecf235c3:prefix:113",
+    "arm": "B0",
+    "questions": 2,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "2:1621543a17bd464feaf4ba73d83d579d0160987536bde8725ac29131ecf235c3:prefix:113",
+    "arm": "E",
+    "questions": 2,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "2:1621543a17bd464feaf4ba73d83d579d0160987536bde8725ac29131ecf235c3:prefix:113",
+    "arm": "R1Q",
+    "questions": 2,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "2:1621543a17bd464feaf4ba73d83d579d0160987536bde8725ac29131ecf235c3:prefix:113",
+    "arm": "P2",
+    "questions": 2,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "210:data/chat_history_32k/chat_history_250913_163134_persona210.json",
+    "arm": "B0",
+    "questions": 24,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "210:data/chat_history_32k/chat_history_250913_163134_persona210.json",
+    "arm": "E",
+    "questions": 24,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "210:data/chat_history_32k/chat_history_250913_163134_persona210.json",
+    "arm": "R1Q",
+    "questions": 24,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "210:data/chat_history_32k/chat_history_250913_163134_persona210.json",
+    "arm": "P2",
+    "questions": 24,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "244:data/chat_history_32k/chat_history_250913_163134_persona244.json",
+    "arm": "B0",
+    "questions": 21,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "244:data/chat_history_32k/chat_history_250913_163134_persona244.json",
+    "arm": "E",
+    "questions": 21,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "244:data/chat_history_32k/chat_history_250913_163134_persona244.json",
+    "arm": "R1Q",
+    "questions": 21,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "244:data/chat_history_32k/chat_history_250913_163134_persona244.json",
+    "arm": "P2",
+    "questions": 21,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "100K:3",
+    "arm": "B0",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "100K:3",
+    "arm": "E",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "100K:3",
+    "arm": "R1Q",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "100K:3",
+    "arm": "P2",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "100K:6",
+    "arm": "B0",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "100K:6",
+    "arm": "E",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "100K:6",
+    "arm": "R1Q",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 21,
+    "history": "100K:6",
+    "arm": "P2",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "conv-41",
+    "arm": "B0",
+    "questions": 52,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "conv-41",
+    "arm": "E",
+    "questions": 52,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "conv-41",
+    "arm": "R1Q",
+    "questions": 52,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "conv-41",
+    "arm": "P2",
+    "questions": 52,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "conv-49",
+    "arm": "B0",
+    "questions": 42,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "conv-49",
+    "arm": "E",
+    "questions": 42,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "conv-49",
+    "arm": "R1Q",
+    "questions": 42,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "conv-49",
+    "arm": "P2",
+    "questions": 42,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "0ea62687",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "0ea62687",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "0ea62687",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "0ea62687",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "gpt4_f420262c",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "gpt4_f420262c",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "gpt4_f420262c",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "gpt4_f420262c",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "gpt4_85da3956",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "gpt4_85da3956",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "gpt4_85da3956",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "gpt4_85da3956",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "0bc8ad93",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "0bc8ad93",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "0bc8ad93",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "0bc8ad93",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "8c18457d",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "8c18457d",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "8c18457d",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "8c18457d",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "2698e78f",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "2698e78f",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "2698e78f",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "2698e78f",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "db467c8c",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "db467c8c",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "db467c8c",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "db467c8c",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "9378c946-529d-4e4d-ab79-fa009c9cebd7",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "9378c946-529d-4e4d-ab79-fa009c9cebd7",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "9378c946-529d-4e4d-ab79-fa009c9cebd7",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "9378c946-529d-4e4d-ab79-fa009c9cebd7",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "12a269e6-e38e-4a3a-ac09-b41a1aa181cd",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "12a269e6-e38e-4a3a-ac09-b41a1aa181cd",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "12a269e6-e38e-4a3a-ac09-b41a1aa181cd",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "12a269e6-e38e-4a3a-ac09-b41a1aa181cd",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "b42144de-9311-4c4c-9cbd-d3387cf5e4ed",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "b42144de-9311-4c4c-9cbd-d3387cf5e4ed",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "b42144de-9311-4c4c-9cbd-d3387cf5e4ed",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "b42144de-9311-4c4c-9cbd-d3387cf5e4ed",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "5a7d1888-fa4e-4069-b4cb-5f1ed31ea3e4",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "5a7d1888-fa4e-4069-b4cb-5f1ed31ea3e4",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "5a7d1888-fa4e-4069-b4cb-5f1ed31ea3e4",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "5a7d1888-fa4e-4069-b4cb-5f1ed31ea3e4",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "8c24c2dc-8977-4bcf-bafa-ca245f9c7dff",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "8c24c2dc-8977-4bcf-bafa-ca245f9c7dff",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "8c24c2dc-8977-4bcf-bafa-ca245f9c7dff",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "8c24c2dc-8977-4bcf-bafa-ca245f9c7dff",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "aa643e6f-bcea-4181-afb5-19c9e875ee83",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "aa643e6f-bcea-4181-afb5-19c9e875ee83",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "aa643e6f-bcea-4181-afb5-19c9e875ee83",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "aa643e6f-bcea-4181-afb5-19c9e875ee83",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "c0c846f5-2266-4a72-8194-73246810d541",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "c0c846f5-2266-4a72-8194-73246810d541",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "c0c846f5-2266-4a72-8194-73246810d541",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "c0c846f5-2266-4a72-8194-73246810d541",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "667a163f-2968-440b-a0aa-6ed1ef7582e6",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "667a163f-2968-440b-a0aa-6ed1ef7582e6",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "667a163f-2968-440b-a0aa-6ed1ef7582e6",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "667a163f-2968-440b-a0aa-6ed1ef7582e6",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "65f29eed-a201-4a1b-a6c1-d90c31bff382",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "65f29eed-a201-4a1b-a6c1-d90c31bff382",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "65f29eed-a201-4a1b-a6c1-d90c31bff382",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "65f29eed-a201-4a1b-a6c1-d90c31bff382",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "5:bc7411051b57e9cd98f3a7861f5215815b6212013d05ad447915ce8442b92845:prefix:193",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "5:bc7411051b57e9cd98f3a7861f5215815b6212013d05ad447915ce8442b92845:prefix:193",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "5:bc7411051b57e9cd98f3a7861f5215815b6212013d05ad447915ce8442b92845:prefix:193",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "5:bc7411051b57e9cd98f3a7861f5215815b6212013d05ad447915ce8442b92845:prefix:193",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "11:7860e54f4cee5267176f112e951a7796b199e833227c43426272c210d2f1bf42:prefix:174",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "11:7860e54f4cee5267176f112e951a7796b199e833227c43426272c210d2f1bf42:prefix:174",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "11:7860e54f4cee5267176f112e951a7796b199e833227c43426272c210d2f1bf42:prefix:174",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "11:7860e54f4cee5267176f112e951a7796b199e833227c43426272c210d2f1bf42:prefix:174",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "679:data/chat_history_32k/chat_history_250913_163134_persona679.json",
+    "arm": "B0",
+    "questions": 24,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "679:data/chat_history_32k/chat_history_250913_163134_persona679.json",
+    "arm": "E",
+    "questions": 24,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "679:data/chat_history_32k/chat_history_250913_163134_persona679.json",
+    "arm": "R1Q",
+    "questions": 24,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "679:data/chat_history_32k/chat_history_250913_163134_persona679.json",
+    "arm": "P2",
+    "questions": 24,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "948:data/chat_history_32k/chat_history_250913_163134_persona948.json",
+    "arm": "B0",
+    "questions": 14,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "948:data/chat_history_32k/chat_history_250913_163134_persona948.json",
+    "arm": "E",
+    "questions": 14,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "948:data/chat_history_32k/chat_history_250913_163134_persona948.json",
+    "arm": "R1Q",
+    "questions": 14,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "948:data/chat_history_32k/chat_history_250913_163134_persona948.json",
+    "arm": "P2",
+    "questions": 14,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "100K:7",
+    "arm": "B0",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "100K:7",
+    "arm": "E",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "100K:7",
+    "arm": "R1Q",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "100K:7",
+    "arm": "P2",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "100K:20",
+    "arm": "B0",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "100K:20",
+    "arm": "E",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "100K:20",
+    "arm": "R1Q",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 22,
+    "history": "100K:20",
+    "arm": "P2",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "conv-44",
+    "arm": "B0",
+    "questions": 27,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "conv-44",
+    "arm": "E",
+    "questions": 27,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "conv-44",
+    "arm": "R1Q",
+    "questions": 27,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "conv-44",
+    "arm": "P2",
+    "questions": 27,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "conv-47",
+    "arm": "B0",
+    "questions": 57,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "conv-47",
+    "arm": "E",
+    "questions": 57,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "conv-47",
+    "arm": "R1Q",
+    "questions": 57,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "conv-47",
+    "arm": "P2",
+    "questions": 57,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "caf9ead2",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "caf9ead2",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "caf9ead2",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "caf9ead2",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "9d25d4e0",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "9d25d4e0",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "9d25d4e0",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "9d25d4e0",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "38146c39",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "38146c39",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "38146c39",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "38146c39",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "f35224e0",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "f35224e0",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "f35224e0",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "f35224e0",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "gpt4_59149c78",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "gpt4_59149c78",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "gpt4_59149c78",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "gpt4_59149c78",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "gpt4_b5700ca0",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "gpt4_b5700ca0",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "gpt4_b5700ca0",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "gpt4_b5700ca0",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "982b5123",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "982b5123",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "982b5123",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "982b5123",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "342a79b2-2cce-4975-8c1f-48f8dccc7e61",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "342a79b2-2cce-4975-8c1f-48f8dccc7e61",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "342a79b2-2cce-4975-8c1f-48f8dccc7e61",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "342a79b2-2cce-4975-8c1f-48f8dccc7e61",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "fb6da176-0bff-4ab8-9305-9da828215bb9",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "fb6da176-0bff-4ab8-9305-9da828215bb9",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "fb6da176-0bff-4ab8-9305-9da828215bb9",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "fb6da176-0bff-4ab8-9305-9da828215bb9",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "a2cb2cae-86f0-41ad-a976-162798a38780",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "a2cb2cae-86f0-41ad-a976-162798a38780",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "a2cb2cae-86f0-41ad-a976-162798a38780",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "a2cb2cae-86f0-41ad-a976-162798a38780",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "bfbcb009-c2ff-4a93-98da-259d148dc8d1",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "bfbcb009-c2ff-4a93-98da-259d148dc8d1",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "bfbcb009-c2ff-4a93-98da-259d148dc8d1",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "bfbcb009-c2ff-4a93-98da-259d148dc8d1",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "32716667-92ed-4074-8d49-2dce610d19ee",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "32716667-92ed-4074-8d49-2dce610d19ee",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "32716667-92ed-4074-8d49-2dce610d19ee",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "32716667-92ed-4074-8d49-2dce610d19ee",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "d0335162-5052-4642-bd90-1ddaf76ce591",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "d0335162-5052-4642-bd90-1ddaf76ce591",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "d0335162-5052-4642-bd90-1ddaf76ce591",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "d0335162-5052-4642-bd90-1ddaf76ce591",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "3c85553b-20c8-405f-9887-bf009956e66c",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "3c85553b-20c8-405f-9887-bf009956e66c",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "3c85553b-20c8-405f-9887-bf009956e66c",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "3c85553b-20c8-405f-9887-bf009956e66c",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "1ffec452-825f-4e9b-9d28-10b032c801b2",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "1ffec452-825f-4e9b-9d28-10b032c801b2",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "1ffec452-825f-4e9b-9d28-10b032c801b2",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "1ffec452-825f-4e9b-9d28-10b032c801b2",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "18c8e0fa-555a-429c-a414-1266aaa6f80b",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "18c8e0fa-555a-429c-a414-1266aaa6f80b",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "18c8e0fa-555a-429c-a414-1266aaa6f80b",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "18c8e0fa-555a-429c-a414-1266aaa6f80b",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "1:ae5c969c32dafa28ff3f884495f4655de811b061007afaf3307d7b858ff7cfae:prefix:163",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "1:ae5c969c32dafa28ff3f884495f4655de811b061007afaf3307d7b858ff7cfae:prefix:163",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "1:ae5c969c32dafa28ff3f884495f4655de811b061007afaf3307d7b858ff7cfae:prefix:163",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "1:ae5c969c32dafa28ff3f884495f4655de811b061007afaf3307d7b858ff7cfae:prefix:163",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "16:793db46bf4b7b99a33af860c6afe583bc9ede18fa80506e6952ccb5a1d01e693:prefix:136",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "16:793db46bf4b7b99a33af860c6afe583bc9ede18fa80506e6952ccb5a1d01e693:prefix:136",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "16:793db46bf4b7b99a33af860c6afe583bc9ede18fa80506e6952ccb5a1d01e693:prefix:136",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "16:793db46bf4b7b99a33af860c6afe583bc9ede18fa80506e6952ccb5a1d01e693:prefix:136",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "974:data/chat_history_32k/chat_history_250913_163134_persona974.json",
+    "arm": "B0",
+    "questions": 20,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "974:data/chat_history_32k/chat_history_250913_163134_persona974.json",
+    "arm": "E",
+    "questions": 20,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "974:data/chat_history_32k/chat_history_250913_163134_persona974.json",
+    "arm": "R1Q",
+    "questions": 20,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "974:data/chat_history_32k/chat_history_250913_163134_persona974.json",
+    "arm": "P2",
+    "questions": 20,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "289:data/chat_history_32k/chat_history_250913_163134_persona289.json",
+    "arm": "B0",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "289:data/chat_history_32k/chat_history_250913_163134_persona289.json",
+    "arm": "E",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "289:data/chat_history_32k/chat_history_250913_163134_persona289.json",
+    "arm": "R1Q",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "289:data/chat_history_32k/chat_history_250913_163134_persona289.json",
+    "arm": "P2",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "100K:9",
+    "arm": "B0",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "100K:9",
+    "arm": "E",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "100K:9",
+    "arm": "R1Q",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "100K:9",
+    "arm": "P2",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "100K:14",
+    "arm": "B0",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "100K:14",
+    "arm": "E",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "100K:14",
+    "arm": "R1Q",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 23,
+    "history": "100K:14",
+    "arm": "P2",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "conv-30",
+    "arm": "B0",
+    "questions": 28,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "conv-30",
+    "arm": "E",
+    "questions": 28,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "conv-30",
+    "arm": "R1Q",
+    "questions": 28,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "conv-30",
+    "arm": "P2",
+    "questions": 28,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "conv-48",
+    "arm": "B0",
+    "questions": 50,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "conv-48",
+    "arm": "E",
+    "questions": 50,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "conv-48",
+    "arm": "R1Q",
+    "questions": 50,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "conv-48",
+    "arm": "P2",
+    "questions": 50,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "caf03d32",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "caf03d32",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "caf03d32",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "caf03d32",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "d905b33f",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "d905b33f",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "d905b33f",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "d905b33f",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "55241a1f",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "55241a1f",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "55241a1f",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "55241a1f",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "ba358f49_abs",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "ba358f49_abs",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "ba358f49_abs",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "ba358f49_abs",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "4b24c848",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "4b24c848",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "4b24c848",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "4b24c848",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "51b23612",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "51b23612",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "51b23612",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "51b23612",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "162d272f-6f96-4ebf-89f5-8549397c54fe",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "162d272f-6f96-4ebf-89f5-8549397c54fe",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "162d272f-6f96-4ebf-89f5-8549397c54fe",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "162d272f-6f96-4ebf-89f5-8549397c54fe",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "aa9c3cfd-ba9a-4025-bc6d-a1b367286690",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "aa9c3cfd-ba9a-4025-bc6d-a1b367286690",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "aa9c3cfd-ba9a-4025-bc6d-a1b367286690",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "aa9c3cfd-ba9a-4025-bc6d-a1b367286690",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "647630df-c472-4c11-afe4-a2707a1dd4f2",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "647630df-c472-4c11-afe4-a2707a1dd4f2",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "647630df-c472-4c11-afe4-a2707a1dd4f2",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "647630df-c472-4c11-afe4-a2707a1dd4f2",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "cf388067-a2d4-49e0-9b6a-069532894067",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "cf388067-a2d4-49e0-9b6a-069532894067",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "cf388067-a2d4-49e0-9b6a-069532894067",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "cf388067-a2d4-49e0-9b6a-069532894067",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "8d9c49d6-1eec-4abe-b453-a82eb3397ea9",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "8d9c49d6-1eec-4abe-b453-a82eb3397ea9",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "8d9c49d6-1eec-4abe-b453-a82eb3397ea9",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "8d9c49d6-1eec-4abe-b453-a82eb3397ea9",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "918fb28d-91a9-4b08-9435-02e59e4e0f08",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "918fb28d-91a9-4b08-9435-02e59e4e0f08",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "918fb28d-91a9-4b08-9435-02e59e4e0f08",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "918fb28d-91a9-4b08-9435-02e59e4e0f08",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "35a2b7fa-97b8-4b9d-8245-fa1e65b9732a",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "35a2b7fa-97b8-4b9d-8245-fa1e65b9732a",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "35a2b7fa-97b8-4b9d-8245-fa1e65b9732a",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "35a2b7fa-97b8-4b9d-8245-fa1e65b9732a",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "0427cc9a-d781-4b7a-af69-421a0b106055",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "0427cc9a-d781-4b7a-af69-421a0b106055",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "0427cc9a-d781-4b7a-af69-421a0b106055",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "0427cc9a-d781-4b7a-af69-421a0b106055",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "7:a9f46aff0bd886c1e45562554ffc4d67fcee974f8cdcd41611e465971692a6f5:prefix:160",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "7:a9f46aff0bd886c1e45562554ffc4d67fcee974f8cdcd41611e465971692a6f5:prefix:160",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "7:a9f46aff0bd886c1e45562554ffc4d67fcee974f8cdcd41611e465971692a6f5:prefix:160",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "7:a9f46aff0bd886c1e45562554ffc4d67fcee974f8cdcd41611e465971692a6f5:prefix:160",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "9:6546821cd2f05f8df39d4b987545f71420fe48c2d7282230d1a92c7a77037893:prefix:142",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "9:6546821cd2f05f8df39d4b987545f71420fe48c2d7282230d1a92c7a77037893:prefix:142",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "9:6546821cd2f05f8df39d4b987545f71420fe48c2d7282230d1a92c7a77037893:prefix:142",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "9:6546821cd2f05f8df39d4b987545f71420fe48c2d7282230d1a92c7a77037893:prefix:142",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "321:data/chat_history_32k/chat_history_250913_163134_persona321.json",
+    "arm": "B0",
+    "questions": 20,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "321:data/chat_history_32k/chat_history_250913_163134_persona321.json",
+    "arm": "E",
+    "questions": 20,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "321:data/chat_history_32k/chat_history_250913_163134_persona321.json",
+    "arm": "R1Q",
+    "questions": 20,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "321:data/chat_history_32k/chat_history_250913_163134_persona321.json",
+    "arm": "P2",
+    "questions": 20,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "697:data/chat_history_32k/chat_history_250913_163134_persona697.json",
+    "arm": "B0",
+    "questions": 25,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "697:data/chat_history_32k/chat_history_250913_163134_persona697.json",
+    "arm": "E",
+    "questions": 25,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "697:data/chat_history_32k/chat_history_250913_163134_persona697.json",
+    "arm": "R1Q",
+    "questions": 25,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "697:data/chat_history_32k/chat_history_250913_163134_persona697.json",
+    "arm": "P2",
+    "questions": 25,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "100K:3",
+    "arm": "B0",
+    "questions": 20,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "100K:3",
+    "arm": "E",
+    "questions": 20,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "100K:3",
+    "arm": "R1Q",
+    "questions": 20,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "100K:3",
+    "arm": "P2",
+    "questions": 20,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "100K:14",
+    "arm": "B0",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "100K:14",
+    "arm": "E",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "100K:14",
+    "arm": "R1Q",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 24,
+    "history": "100K:14",
+    "arm": "P2",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "conv-26",
+    "arm": "B0",
+    "questions": 51,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "conv-26",
+    "arm": "E",
+    "questions": 51,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "conv-26",
+    "arm": "R1Q",
+    "questions": 51,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "conv-26",
+    "arm": "P2",
+    "questions": 51,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "conv-43",
+    "arm": "B0",
+    "questions": 44,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "conv-43",
+    "arm": "E",
+    "questions": 44,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "conv-43",
+    "arm": "R1Q",
+    "questions": 44,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "conv-43",
+    "arm": "P2",
+    "questions": 44,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "gpt4_a56e767c",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "gpt4_a56e767c",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "gpt4_a56e767c",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "gpt4_a56e767c",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "1c549ce4",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "1c549ce4",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "1c549ce4",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "1c549ce4",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "55241a1f",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "55241a1f",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "55241a1f",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "55241a1f",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "gpt4_98f46fc6",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "gpt4_98f46fc6",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "gpt4_98f46fc6",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "gpt4_98f46fc6",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "45dc21b6",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "45dc21b6",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "45dc21b6",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "45dc21b6",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "dfde3500",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "dfde3500",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "dfde3500",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "dfde3500",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "54dd7e46-ac53-4ad7-b368-45e87c7aceaa",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "54dd7e46-ac53-4ad7-b368-45e87c7aceaa",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "54dd7e46-ac53-4ad7-b368-45e87c7aceaa",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "54dd7e46-ac53-4ad7-b368-45e87c7aceaa",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "573277e7-5d79-4b15-9a33-0b6dd5661ec9",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "573277e7-5d79-4b15-9a33-0b6dd5661ec9",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "573277e7-5d79-4b15-9a33-0b6dd5661ec9",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "573277e7-5d79-4b15-9a33-0b6dd5661ec9",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "088d538d-ef2c-4466-b827-a5ceec2697ab",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "088d538d-ef2c-4466-b827-a5ceec2697ab",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "088d538d-ef2c-4466-b827-a5ceec2697ab",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "088d538d-ef2c-4466-b827-a5ceec2697ab",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "51ef16dd-ac5c-43ba-8308-9b200647538e",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "51ef16dd-ac5c-43ba-8308-9b200647538e",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "51ef16dd-ac5c-43ba-8308-9b200647538e",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "51ef16dd-ac5c-43ba-8308-9b200647538e",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "6a2012ee-3ced-4976-a773-906110a20d7b",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "6a2012ee-3ced-4976-a773-906110a20d7b",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "6a2012ee-3ced-4976-a773-906110a20d7b",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "6a2012ee-3ced-4976-a773-906110a20d7b",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "98cdbb14-c7a4-4115-a179-37a1c62b6766",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "98cdbb14-c7a4-4115-a179-37a1c62b6766",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "98cdbb14-c7a4-4115-a179-37a1c62b6766",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "98cdbb14-c7a4-4115-a179-37a1c62b6766",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "0e311ff3-8871-4818-8bed-e5a51e789dbd",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "0e311ff3-8871-4818-8bed-e5a51e789dbd",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "0e311ff3-8871-4818-8bed-e5a51e789dbd",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "0e311ff3-8871-4818-8bed-e5a51e789dbd",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "7b62df8e-439e-41ac-aa00-59e747a87eb7",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "7b62df8e-439e-41ac-aa00-59e747a87eb7",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "7b62df8e-439e-41ac-aa00-59e747a87eb7",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "7b62df8e-439e-41ac-aa00-59e747a87eb7",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "e657f9e3-d665-4cf7-9f08-eb777d1d6f59",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "e657f9e3-d665-4cf7-9f08-eb777d1d6f59",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "e657f9e3-d665-4cf7-9f08-eb777d1d6f59",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "e657f9e3-d665-4cf7-9f08-eb777d1d6f59",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "10:7797915581c01170c2a46616041687c09d59240b417898659034cd31cdc8cebf:prefix:185",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "10:7797915581c01170c2a46616041687c09d59240b417898659034cd31cdc8cebf:prefix:185",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "10:7797915581c01170c2a46616041687c09d59240b417898659034cd31cdc8cebf:prefix:185",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "10:7797915581c01170c2a46616041687c09d59240b417898659034cd31cdc8cebf:prefix:185",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "15:5f9be905f1374d0906caf04903eebe4f027af9d3d36acd2fef957928864bd8e6:prefix:139",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "15:5f9be905f1374d0906caf04903eebe4f027af9d3d36acd2fef957928864bd8e6:prefix:139",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "15:5f9be905f1374d0906caf04903eebe4f027af9d3d36acd2fef957928864bd8e6:prefix:139",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "15:5f9be905f1374d0906caf04903eebe4f027af9d3d36acd2fef957928864bd8e6:prefix:139",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "18:246eaab75dc40bee43ca87c3eddd4b5b9e229e3f1481cc72c6d44b62f985560e:prefix:185",
+    "arm": "B0",
+    "questions": 8,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "18:246eaab75dc40bee43ca87c3eddd4b5b9e229e3f1481cc72c6d44b62f985560e:prefix:185",
+    "arm": "E",
+    "questions": 8,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "18:246eaab75dc40bee43ca87c3eddd4b5b9e229e3f1481cc72c6d44b62f985560e:prefix:185",
+    "arm": "R1Q",
+    "questions": 8,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "18:246eaab75dc40bee43ca87c3eddd4b5b9e229e3f1481cc72c6d44b62f985560e:prefix:185",
+    "arm": "P2",
+    "questions": 8,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "837:data/chat_history_32k/chat_history_250913_163134_persona837.json",
+    "arm": "B0",
+    "questions": 21,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "837:data/chat_history_32k/chat_history_250913_163134_persona837.json",
+    "arm": "E",
+    "questions": 21,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "837:data/chat_history_32k/chat_history_250913_163134_persona837.json",
+    "arm": "R1Q",
+    "questions": 21,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "837:data/chat_history_32k/chat_history_250913_163134_persona837.json",
+    "arm": "P2",
+    "questions": 21,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "692:data/chat_history_32k/chat_history_250913_163134_persona692.json",
+    "arm": "B0",
+    "questions": 26,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "692:data/chat_history_32k/chat_history_250913_163134_persona692.json",
+    "arm": "E",
+    "questions": 26,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "692:data/chat_history_32k/chat_history_250913_163134_persona692.json",
+    "arm": "R1Q",
+    "questions": 26,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "692:data/chat_history_32k/chat_history_250913_163134_persona692.json",
+    "arm": "P2",
+    "questions": 26,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "100K:3",
+    "arm": "B0",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "100K:3",
+    "arm": "E",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "100K:3",
+    "arm": "R1Q",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "100K:3",
+    "arm": "P2",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "100K:10",
+    "arm": "B0",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "100K:10",
+    "arm": "E",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "100K:10",
+    "arm": "R1Q",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 25,
+    "history": "100K:10",
+    "arm": "P2",
+    "questions": 17,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "conv-43",
+    "arm": "B0",
+    "questions": 52,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "conv-43",
+    "arm": "E",
+    "questions": 52,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "conv-43",
+    "arm": "R1Q",
+    "questions": 52,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "conv-43",
+    "arm": "P2",
+    "questions": 52,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "conv-44",
+    "arm": "B0",
+    "questions": 26,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "conv-44",
+    "arm": "E",
+    "questions": 26,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "conv-44",
+    "arm": "R1Q",
+    "questions": 26,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "conv-44",
+    "arm": "P2",
+    "questions": 26,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "09ba9854",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "09ba9854",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "09ba9854",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "09ba9854",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "gpt4_4929293a",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "gpt4_4929293a",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "gpt4_4929293a",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "gpt4_4929293a",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "gpt4_61e13b3c",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "gpt4_61e13b3c",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "gpt4_61e13b3c",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "gpt4_61e13b3c",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "gpt4_0b2f1d21",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "gpt4_0b2f1d21",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "gpt4_0b2f1d21",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "gpt4_0b2f1d21",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "8c18457d",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "8c18457d",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "8c18457d",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "8c18457d",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "982b5123_abs",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "982b5123_abs",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "982b5123_abs",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "982b5123_abs",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "9ccf5bb5-1997-4798-8e95-0fcb2381f764",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "9ccf5bb5-1997-4798-8e95-0fcb2381f764",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "9ccf5bb5-1997-4798-8e95-0fcb2381f764",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "9ccf5bb5-1997-4798-8e95-0fcb2381f764",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "188aca20-6755-437b-8d46-aa4f8213677c",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "188aca20-6755-437b-8d46-aa4f8213677c",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "188aca20-6755-437b-8d46-aa4f8213677c",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "188aca20-6755-437b-8d46-aa4f8213677c",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "9b044729-f747-4faf-85b1-b096017429be",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "9b044729-f747-4faf-85b1-b096017429be",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "9b044729-f747-4faf-85b1-b096017429be",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "9b044729-f747-4faf-85b1-b096017429be",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "eb72b3df-948f-4b0d-b7d3-e5591882597f",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "eb72b3df-948f-4b0d-b7d3-e5591882597f",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "eb72b3df-948f-4b0d-b7d3-e5591882597f",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "eb72b3df-948f-4b0d-b7d3-e5591882597f",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "8fbe0c0d-d1f1-49a4-ab5e-9fcbc821117f",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "8fbe0c0d-d1f1-49a4-ab5e-9fcbc821117f",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "8fbe0c0d-d1f1-49a4-ab5e-9fcbc821117f",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "8fbe0c0d-d1f1-49a4-ab5e-9fcbc821117f",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "5964256c-1f31-420e-8784-84c618646072",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "5964256c-1f31-420e-8784-84c618646072",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "5964256c-1f31-420e-8784-84c618646072",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "5964256c-1f31-420e-8784-84c618646072",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "bdf5300b-29d1-484c-88a5-339d619e4d8e",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "bdf5300b-29d1-484c-88a5-339d619e4d8e",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "bdf5300b-29d1-484c-88a5-339d619e4d8e",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "bdf5300b-29d1-484c-88a5-339d619e4d8e",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "fc536673-6a57-4ff2-a38f-661b81eebaea",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "fc536673-6a57-4ff2-a38f-661b81eebaea",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "fc536673-6a57-4ff2-a38f-661b81eebaea",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "fc536673-6a57-4ff2-a38f-661b81eebaea",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "8:5c00a991550b5222efae1b357a4ab788855512ca85edcf467bab7a2816abd852:prefix:211",
+    "arm": "B0",
+    "questions": 7,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "8:5c00a991550b5222efae1b357a4ab788855512ca85edcf467bab7a2816abd852:prefix:211",
+    "arm": "E",
+    "questions": 7,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "8:5c00a991550b5222efae1b357a4ab788855512ca85edcf467bab7a2816abd852:prefix:211",
+    "arm": "R1Q",
+    "questions": 7,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "8:5c00a991550b5222efae1b357a4ab788855512ca85edcf467bab7a2816abd852:prefix:211",
+    "arm": "P2",
+    "questions": 7,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "12:d4a1f9dcaab3b0eb522c4a7e1521a05eed6b02ca443f0ee9331df07306511255:prefix:167",
+    "arm": "B0",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "12:d4a1f9dcaab3b0eb522c4a7e1521a05eed6b02ca443f0ee9331df07306511255:prefix:167",
+    "arm": "E",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "12:d4a1f9dcaab3b0eb522c4a7e1521a05eed6b02ca443f0ee9331df07306511255:prefix:167",
+    "arm": "R1Q",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "12:d4a1f9dcaab3b0eb522c4a7e1521a05eed6b02ca443f0ee9331df07306511255:prefix:167",
+    "arm": "P2",
+    "questions": 1,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "601:data/chat_history_32k/chat_history_250913_163134_persona601.json",
+    "arm": "B0",
+    "questions": 27,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "601:data/chat_history_32k/chat_history_250913_163134_persona601.json",
+    "arm": "E",
+    "questions": 27,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "601:data/chat_history_32k/chat_history_250913_163134_persona601.json",
+    "arm": "R1Q",
+    "questions": 27,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "601:data/chat_history_32k/chat_history_250913_163134_persona601.json",
+    "arm": "P2",
+    "questions": 27,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "578:data/chat_history_32k/chat_history_250913_163134_persona578.json",
+    "arm": "B0",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "578:data/chat_history_32k/chat_history_250913_163134_persona578.json",
+    "arm": "E",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "578:data/chat_history_32k/chat_history_250913_163134_persona578.json",
+    "arm": "R1Q",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "578:data/chat_history_32k/chat_history_250913_163134_persona578.json",
+    "arm": "P2",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "100K:11",
+    "arm": "B0",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "100K:11",
+    "arm": "E",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "100K:11",
+    "arm": "R1Q",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "100K:11",
+    "arm": "P2",
+    "questions": 19,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "100K:12",
+    "arm": "B0",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "100K:12",
+    "arm": "E",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "100K:12",
+    "arm": "R1Q",
+    "questions": 18,
+    "snapshot_verified": true
+  },
+  {
+    "seed": 26,
+    "history": "100K:12",
+    "arm": "P2",
+    "questions": 18,
+    "snapshot_verified": true
+  }
+]

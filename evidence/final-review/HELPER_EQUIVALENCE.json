@@ -1,0 +1,19 @@
+{
+  "memory_benchmark/pipeline/context.py": {
+    "ast_equivalence": {
+      "GPTTokenizer": true,
+      "FixtureTokenizer": true,
+      "count_prompt": true,
+      "normalize": true,
+      "pack": true,
+      "pack_ranked_prefix": true
+    },
+    "passed": true
+  },
+  "memory_benchmark/schemas.py": {
+    "ast_equivalence": {
+      "Evidence": true
+    },
+    "passed": true
+  }
+}
