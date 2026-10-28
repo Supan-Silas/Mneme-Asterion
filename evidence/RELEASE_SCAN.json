@@ -1,8 +1,0 @@
-{
-  "algorithm_files_checked": 43,
-  "algorithm_match": true,
-  "private_artifacts": [],
-  "errors": [],
-  "pass": true,
-  "note": "Pattern/file checks are not a guarantee against every possible secret format."
-}

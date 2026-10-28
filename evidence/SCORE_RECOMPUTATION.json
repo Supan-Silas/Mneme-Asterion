@@ -1,6 +1,0 @@
-{
-  "status": "passed",
-  "metric_groups": 16,
-  "questions_arms": 7712,
-  "scope": "recompute saved seed statistics and completeness, not rerun Judge"
-}

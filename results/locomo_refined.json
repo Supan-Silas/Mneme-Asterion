@@ -1,0 +1,91 @@
+{
+  "dataset": "LoCoMo-Refined",
+  "histories_per_round": 10,
+  "questions_per_round": 861,
+  "round_ids": [
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "build_policy": "independent build per method and round",
+  "model": "gpt-4o-mini",
+  "embedding_model": "text-embedding-v4",
+  "embedding_dimensions": 1024,
+  "reader": {
+    "top_k": 100,
+    "answer_input_token_limit": 117760,
+    "answer_context_policy": "aml_ranked_prefix_v1"
+  },
+  "scoped_state_version": "repaired V4 core, unchanged in v4.0 and v4.0.1",
+  "ami_execution": "native Search/Answer/Judge rerun using each round's existing independently built AMI database",
+  "methods": {
+    "AMI": {
+      "correct": [
+        711,
+        709,
+        714,
+        716,
+        705
+      ],
+      "mean_percent": 82.57839721254355,
+      "sample_std_percent": 0.4995543128363892
+    },
+    "P2": {
+      "correct": [
+        734,
+        737,
+        734,
+        734,
+        731
+      ],
+      "mean_percent": 85.24970963995354,
+      "sample_std_percent": 0.2463786694029781
+    },
+    "ScopedStateV4": {
+      "correct": [
+        726,
+        731,
+        739,
+        737,
+        739
+      ],
+      "mean_percent": 85.29616724738675,
+      "sample_std_percent": 0.6651717102567408
+    },
+    "InvMem": {
+      "correct": [
+        705,
+        710,
+        703,
+        713,
+        713
+      ],
+      "mean_percent": 82.32288037166086,
+      "sample_std_percent": 0.5347672210555787
+    },
+    "ReFind": {
+      "correct": [
+        671,
+        665,
+        652,
+        652,
+        658
+      ],
+      "mean_percent": 76.60859465737515,
+      "sample_std_percent": 0.9668597160635262
+    },
+    "Mem0": {
+      "correct": [
+        693,
+        691,
+        691,
+        692,
+        689
+      ],
+      "mean_percent": 80.2787456445993,
+      "sample_std_percent": 0.1722694189801547
+    }
+  }
+}

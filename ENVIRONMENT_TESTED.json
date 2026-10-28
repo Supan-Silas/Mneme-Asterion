@@ -1,9 +1,0 @@
-{
-  "python": "3.11",
-  "windows_offline_tests": 59,
-  "linux_offline_tests": 59,
-  "linux_synthetic_evaluation_questions": 3,
-  "paid_api_calls_this_review": 0,
-  "service_windows_supported": true,
-  "external_benchmark_platform": "Linux/WSL (fcntl)"
-}

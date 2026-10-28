@@ -7,11 +7,11 @@ import httpx
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--url', default='http://127.0.0.1:8013')
+    p.add_argument('--url', default='http://127.0.0.1:8014')
     p.add_argument('--method', default='ScopedStateV4', choices=['ScopedStateV4', 'P2'])
     a = p.parse_args()
     token = getpass.getpass('Memory service token (not provider API key): ')
-    scope = 'team-smoke-' + uuid.uuid4().hex
+    scope = 'smoke-' + uuid.uuid4().hex
     with httpx.Client(base_url=a.url, headers={'Authorization': 'Bearer '+token},
                       timeout=600, trust_env=False) as c:
         c.get('/health').raise_for_status()

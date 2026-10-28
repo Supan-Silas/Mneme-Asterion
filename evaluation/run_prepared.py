@@ -1,4 +1,4 @@
-"""P2 HTTP -> pinned benchmark Reader/Judge. New reproducibility path, not historical runner."""
+"""Evaluate a memory HTTP service using the a3f9610 benchmark Reader and Judge."""
 import argparse
 from datetime import datetime
 import getpass
@@ -35,7 +35,7 @@ def main():
     p.add_argument('--benchmark-root',required=True,help='benchmark directory at commit a3f9610')
     p.add_argument('--prepared',required=True)
     p.add_argument('--output',required=True,help='NEW output directory; this simple runner does not resume')
-    p.add_argument('--url',default='http://127.0.0.1:8013')
+    p.add_argument('--url',default='http://127.0.0.1:8014')
     p.add_argument('--method',default='ScopedStateV4',choices=['ScopedStateV4','P2'])
     p.add_argument('--check',action='store_true',help='Validate inputs only, no API calls')
     a=p.parse_args()

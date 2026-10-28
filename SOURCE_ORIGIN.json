@@ -1,13 +1,10 @@
 {
-  "version": "Mneme-Asterion-v4.0-20261028",
-  "base": "evaluated ScopedStateV4 20261026",
-  "publication_commit": null,
-  "baseline_upstream_commit": "unknown historical AMI rc3 snapshot",
-  "modified_since_evaluation": false,
-  "change_record": "provenance/REVIEW_CHANGES.json",
-  "upstream_license": "MIT; Xuhao Lin copyright retained",
-  "runtime_core": "scoped-state-v4-review-rc1-20261026",
-  "packaging_modified_since_evaluation": true,
-  "publication_tag": "v4.0",
-  "publication_commit_resolution": "git rev-parse v4.0^{commit}; record resolved full commit in AML submission"
+  "project": "Mneme-Asterion",
+  "version": "4.0.1",
+  "method": "ScopedStateV4",
+  "runtime_reference_commit": "965cbc8672d9a14f1011e15099a5e445457574ed",
+  "core_manifest": "provenance/CORE_SHA256.json",
+  "source_manifest": "SHA256SUMS.json",
+  "upstream": "provenance/UPSTREAM.json",
+  "license": "MIT"
 }

@@ -1,0 +1,85 @@
+{
+  "scoped_state_version": "frozen V4 before interleaved-session and conditional-restoration fixes",
+  "small_benchmark": {
+    "benchmark_commit": "27d2733",
+    "seeds": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "questions_per_seed": 200,
+    "metric": "capability macro average, percent",
+    "aggregation": "mean and sample standard deviation over 10 seeds",
+    "build_policy": "AMI, P2 and V4 share frozen new AMI databases",
+    "methods": {
+      "AMI": {
+        "mean": 53.51,
+        "std": 2.43
+      },
+      "P2": {
+        "mean": 56.21,
+        "std": 2.53
+      },
+      "ScopedStateV4": {
+        "mean": 57.17,
+        "std": 2.82
+      }
+    },
+    "p2_v4_identical_reader_inputs": 2000
+  },
+  "self_stream": {
+    "purpose": "development regression",
+    "sequences": 120,
+    "checkpoints": 600,
+    "correct": {
+      "AMI": 481,
+      "P2": 496,
+      "ScopedStateV4": 599
+    }
+  },
+  "streammembench": {
+    "people": 6,
+    "days": 7,
+    "input_segments": 3347,
+    "sampled_evaluation_points": 210,
+    "metric_order": [
+      "memory_fidelity",
+      "initial_evidence_use",
+      "feedback_absorption",
+      "subsequent_reuse"
+    ],
+    "denominators": [
+      210,
+      210,
+      204,
+      210
+    ],
+    "percent": {
+      "AMI": [
+        91.9,
+        2.86,
+        17.65,
+        3.81
+      ],
+      "P2": [
+        91.9,
+        2.86,
+        16.18,
+        4.76
+      ],
+      "ScopedStateV4": [
+        91.43,
+        2.86,
+        17.16,
+        4.76
+      ]
+    }
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "baseline_manifest_preserved": "BASE_P2_ALGORITHM_SHA256.json",
-  "changed_baseline_algorithm_files": [
-    "p2_service.py"
-  ],
-  "add_and_storage_unchanged": true,
-  "extra_module": "Read-time query-local explicit owner/attribute state projection v4; optional P2_SCOPED_STATE=1. Coverage fallback is research only and NOT included in this deployed candidate hook.",
-  "code_frozen_v4_tests_updated_only": "The shipped state functions match tested v4. The old test expecting another owner value inside current-user withdrawal query was updated to query-local projection and independent other-owner access."
-}

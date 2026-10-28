@@ -1,52 +1,92 @@
 # Mneme-Asterion
 
-**v4.0 · ScopedState** — 带有来源核验与撤回／恢复状态管理的完整文本记忆系统。
+**面向长对话的智能体记忆系统：原文补证、来源核验与作用域状态管理。**
 
-基于 ActiveMemoryIndex（AMI）：保留事实抽取、更新、向量索引；补充有来源的原文证据，并按人物、属性和有效指令处理当前记忆状态。Search 返回记忆证据，由评测平台独立回答和评分。
+Mneme-Asterion 基于 [ActiveMemoryIndex（AMI）](https://github.com/linxuhao/ActiveMemoryIndex)，提供持久化的写入与检索接口。系统将对话组织为原文、事实和更新记录，并在检索时补齐证据、处理撤回与恢复，向下游回答模型提供当前有效的记忆。
 
-本仓库 v4.0 保留已上线的修复版 V4 核心字节。它在 LoCoMo-Refined 五轮独立建库评测中为 **85.30 ± 0.67**；本次新增的是发布检查、接口身份校验和文档，不改变检索算法。详细实验条件见[结果](docs/02_RESULTS.md)。
+## 贡献与改进
 
-## 启动
+- **问题驱动的原文补证**：在 AMI 检索结果上识别人物关系、时间锚点和列表成员等信息缺口，通过 BM25 与邻接消息补充证据。
+- **可追溯的证据选择**：补充内容必须匹配来源中的原文引用；生成式选择器负责挑选材料，返回内容保留来源关联。
+- **作用域状态管理（ScopedState）**：按人物和属性解释显式撤回与恢复，抑制失效副本，区分条件表达与有效授权，同时保留无关属性。
 
-Python 3.11，Linux 示例；创建自己的私有配置目录：
+写入、事实抽取和向量索引继承 AMI；上述改进集中在证据检索、组织与有效性处理。模块与来源见[系统设计](docs/architecture.md)和[来源说明](ATTRIBUTION.md)。
+
+## 工作流程
+
+```text
+对话 → 原文日志 → AMI事实抽取／更新 → SQLite与向量索引
+                                           ↓
+问题 → AMI基础检索 → 原文补证与引用核验 → 撤回过滤 → ScopedState → 记忆证据
+```
+
+`Add` 写入完成后即可检索；`Search` 返回证据，由调用方的回答模型生成答案。
+
+## 实验结果
+
+LoCoMo-Refined：10条完整历史、861题，每种方法进行5轮独立建库评测。统一使用 gpt-4o-mini、text-embedding-v4，报告准确率均值与样本标准差。
+
+| 方法 | 准确率（%） |
+|---|---:|
+| AMI | 82.58 ± 0.50 |
+| P2：原文补证与撤回处理 | 85.25 ± 0.25 |
+| **Mneme-Asterion：ScopedState V4** | **85.30 ± 0.67** |
+
+相对 AMI 提高 **2.72 个百分点**。P2 与 V4 在该静态问答集上表现相近；状态变化测试及完整实验条件见[评测文档](docs/evaluation.md)。逐轮正确数提供于 [results/locomo_refined.json](results/locomo_refined.json)。
+
+## 快速开始
+
+需要 Python 3.11 和兼容 OpenAI API 的模型服务。
 
 ```sh
+git clone https://github.com/Supan-Silas/Mneme-Asterion.git
+cd Mneme-Asterion
 python3.11 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-mkdir -p ../mneme-private
-cp .env.example ../mneme-private/v4.env
-# 编辑 ../mneme-private/v4.env：填写模型服务地址、模型 Key、记忆服务鉴权 Token
-.venv/bin/python run_v4.py --env-file ../mneme-private/v4.env --check
-.venv/bin/python run_v4.py --env-file ../mneme-private/v4.env --db ./data/v4.sqlite3 --host 127.0.0.1 --port 8014
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
 ```
 
-私有配置放在源码目录外；不要上传真实 env。
+在 `.env` 中填写以下五项：
 
-Windows 使用 `.venv\Scripts\python.exe`。生产使用 `run_v4.py`，固定 `P2_SCOPED_STATE=1` 和单 worker；该入口在启动前核验模型、鉴权及核心源码。旧 `launch.py` 仅为兼容实验保留。
+```dotenv
+OPENAI_BASE_URL=https://your-llm-provider.example/v1
+OPENAI_API_KEY=your-llm-api-key
+AMI_EMBED_BASE_URL=https://your-embedding-provider.example/v1
+AMI_EMBED_API_KEY=your-embedding-api-key
+AMI_AUTH_TOKEN=your-service-token
+```
 
-接口：`GET /health`，`POST /add`，`POST /search`；使用 Bearer Token。生产部署通过反向代理提供 HTTPS。
-
-## 验收和阅读
+启动服务：
 
 ```sh
-python verify_candidate.py
-python -m unittest tools.test_preflight
-python tools/verify_release.py
-python tools/verify_manifest.py
-# 已启动服务后再执行；这一步会调用真实 API
-python tools/smoke.py --url http://127.0.0.1:8014 --method ScopedStateV4
+python run_v4.py --env-file .env --check
+python run_v4.py --env-file .env --db ./data/memory.sqlite3 --port 8014
 ```
 
-- [一分钟理解方法](docs/01_TEAM_BRIEF.md)
-- [实验结果与版本对应](docs/02_RESULTS.md)
-- [详细设计及代码位置](docs/03_DESIGN.md)
-- [启动、验收与评测](docs/04_EVALUATION.md)
-- [官方提交说明草稿](docs/05_PUBLICATION.md)
-- [本次严格审查](docs/07_STRICT_REVIEW.md)
-- [运维与回滚](docs/08_OPERATIONS.md)
+上述命令监听 `127.0.0.1:8014`。Windows 可使用 `.venv\Scripts\Activate.ps1` 激活环境。
 
-来源与许可见 [ATTRIBUTION.md](ATTRIBUTION.md)。不分发模型密钥、业务数据库或官方评测原始数据。内部服务标识仍是 `scoped-state-v4-review-rc1-20261026`，Search 方法标识为 `ScopedStateV4`；`v4.0` 是本次整理后的公开发布名称。
+| 接口 | 功能 |
+|---|---|
+| `GET /health` | 健康检查 |
+| `POST /add` | 持久化对话与记忆 |
+| `POST /search` | 检索当前用户的记忆证据 |
 
-## 固定版本
+请求示例见 [API 文档](docs/api.md)。
 
-正式发布标签：`v4.0`。使用 `git rev-parse HEAD` 获取完整commit，官网登记该值。旧v0保留在Git历史中的 `a2f9ca273caa237025add32ea181d5b30a7a45d4`；当前根目录提供完整V4系统，不混用旧v0启动脚本。
+## 文档与开发
+
+- [系统设计](docs/architecture.md)：各模块实现、状态处理与参数。
+- [配置](docs/configuration.md)：模型、并发、存储及检索设置。
+- [API](docs/api.md)：请求、响应和错误处理。
+- [评测](docs/evaluation.md)：实验设置、结果与复现入口。
+- [部署](docs/deployment.md)：持久化、进程管理和HTTPS。
+- [开发指南](CONTRIBUTING.md)：代码结构与测试。
+
+```sh
+python scripts/test.py
+```
+
+## 来源与许可
+
+基于 Xuhao Lin 的 ActiveMemoryIndex，保留原作者署名及 MIT 许可。代码复用、方法参考与本项目改动见 [ATTRIBUTION.md](ATTRIBUTION.md)。

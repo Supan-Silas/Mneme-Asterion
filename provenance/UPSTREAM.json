@@ -1,0 +1,16 @@
+{
+  "upstream": {
+    "name": "ActiveMemoryIndex",
+    "author": "Xuhao Lin",
+    "repository": "https://github.com/linxuhao/ActiveMemoryIndex",
+    "snapshot": "academic-v4-20261005-rc3",
+    "commit": null,
+    "license": "MIT"
+  },
+  "reproduction": {
+    "repository": "https://github.com/Nonlotus-eater/ami-reproduction",
+    "commit": "27b57e4d397f9f4aaa0848215a673ae37f78627b",
+    "working_tree_changes_included": true
+  },
+  "runtime_reference_commit": "965cbc8672d9a14f1011e15099a5e445457574ed"
+}

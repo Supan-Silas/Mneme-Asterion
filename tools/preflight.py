@@ -1,4 +1,4 @@
-"""V4 release identity/configuration checks; never prints credentials or calls APIs."""
+"""Validate the V4 runtime profile and source fingerprints."""
 import argparse
 import json
 from pathlib import Path
@@ -17,7 +17,7 @@ def check_values(values):
                           'AMI_EMBED_BACKEND': 'openai'}.items():
         if values.get(key) != expected:
             errors.append(key + ' must be ' + expected)
-    # Final submission uses the verified Bearer configuration.
+    # The V4 service profile uses Bearer authentication.
     if values.get('AMI_AUTH_SCHEME', '').lower() != 'bearer':
         errors.append('AMI_AUTH_SCHEME must be bearer for this release')
     for key in ('AMI_AUTH_TOKEN', 'OPENAI_API_KEY', 'OPENAI_BASE_URL',
@@ -31,7 +31,7 @@ def check_file(path):
     errors = check_values(read_profile(Path(path).resolve()))
     source = verify()
     if not source['pass']:
-        errors.append('Release source/private-artifact check failed')
+        errors.append('Core source fingerprint check failed')
     return {'passed': not errors, 'method': 'ScopedStateV4',
             'errors': errors, 'source_check': source, 'api_calls': 0}
 
