@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Replace the version-specific launcher with `python -m mneme_asterion`, preserving configuration preflight and service behavior.
+- Present project results in the README and keep versioned experiment details in the evaluation documentation.
+- Align configuration, deployment, and failure-handling documentation with V4.1.
+
+
 ## v4.1.0 — 2026-10-29
 
 - Add bounded model retries and stage-specific fallbacks for extraction and retrieval.

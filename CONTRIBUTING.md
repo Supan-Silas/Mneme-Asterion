@@ -3,7 +3,7 @@
 ## 代码结构
 
 ```text
-run_v4.py            统一启动入口
+mneme_asterion/__main__.py  模块启动入口
 mneme_asterion/      HTTP服务、配置与来源关联
   retrieval/        检索规划、补证与引用核验
   state/            撤回、恢复与作用域状态

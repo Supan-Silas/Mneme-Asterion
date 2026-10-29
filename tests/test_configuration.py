@@ -81,8 +81,8 @@ class ReleaseIdentityTests(unittest.TestCase):
                 self.assertFalse(check_file(root / '.env')['passed'])
 
     def test_help_without_configuration(self):
-        entry = Path(__file__).resolve().parents[1] / 'run_v4.py'
-        result = subprocess.run([sys.executable, str(entry), '--help'], capture_output=True, text=True)
+        root = Path(__file__).resolve().parents[1]
+        result = subprocess.run([sys.executable, '-m', 'mneme_asterion', '--help'], cwd=root, capture_output=True, text=True)
         self.assertEqual(0, result.returncode, result.stderr)
         self.assertIn('--env-file', result.stdout)
 

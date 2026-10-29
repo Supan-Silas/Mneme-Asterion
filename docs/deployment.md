@@ -2,10 +2,10 @@
 
 ## 进程与持久化
 
-使用 `run_v4.py` 启动单worker服务。将SQLite数据库放在持久磁盘，模型地址与鉴权通过配置文件提供。监听地址和端口由 `--host`、`--port` 指定，默认监听本机。
+使用 `python -m mneme_asterion` 启动单worker服务。将SQLite数据库放在持久磁盘，模型地址与鉴权通过配置文件提供。监听地址和端口由 `--host`、`--port` 指定，默认监听本机。
 
 ```sh
-python run_v4.py --env-file /etc/mneme-asterion.env   --db /var/lib/mneme-asterion/memory.sqlite3 --host 127.0.0.1 --port 8014
+python -m mneme_asterion --env-file /etc/mneme-asterion.env   --db /var/lib/mneme-asterion/memory.sqlite3 --host 127.0.0.1 --port 8014
 ```
 
 配置、数据库目录和运行用户权限应与服务用户对应。SQLite备份使用其backup接口，或在停止写入后处理主库与WAL；运行期间保留完整持久化目录。
@@ -20,10 +20,10 @@ Wants=network-online.target
 
 [Service]
 WorkingDirectory=/opt/mneme-asterion
-ExecStart=/opt/mneme-asterion/.venv/bin/python run_v4.py --env-file /etc/mneme-asterion.env --db /var/lib/mneme-asterion/memory.sqlite3 --port 8014
+ExecStart=/opt/mneme-asterion/.venv/bin/python -m mneme_asterion --env-file /etc/mneme-asterion.env --db /var/lib/mneme-asterion/memory.sqlite3 --port 8014
 Restart=on-failure
 RestartSec=5
-TimeoutStopSec=210
+TimeoutStopSec=1800
 
 [Install]
 WantedBy=multi-user.target
@@ -31,7 +31,7 @@ WantedBy=multi-user.target
 
 ## HTTPS与请求超时
 
-公网部署由反向代理终止TLS，将 `/health`、`/add`、`/search`转发到本机8014端口。Add可能包含多个模型请求，反向代理读取超时需要覆盖该处理时间；当前部署采用1800秒，并设置64MB请求体上限。证书配置自动续期。
+公网部署由反向代理终止TLS，将 `/health`、`/add`、`/search`转发到本机8014端口。Add可能包含多个模型请求，反向代理读取超时需要覆盖该处理时间；可采用1800秒代理超时及64MB请求体上限，并配置TLS证书自动续期。
 
 ## 资源规划
 
@@ -45,4 +45,4 @@ WantedBy=multi-user.target
 
 ## V4.1 数据库
 
-V4.1增加原子提交顺序记录。升级时为新版本指定独立的数据库路径，不直接复用旧V4数据库。保留旧版本、配置与原数据库供旧任务恢复；新版本通过Smoke后再启动新Full。Full运行期间保持代码、模型、提示词与配置固定。
+V4.1增加原子提交顺序记录。升级时为新版本指定独立的数据库路径，不直接复用旧V4数据库。保留旧版本、配置与原数据库供旧任务恢复。切换流量前验证写入、检索、幂等与用户隔离；同一评测任务运行期间保持代码、模型、提示词、配置及数据库一致。

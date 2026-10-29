@@ -1,4 +1,4 @@
-"""Portable ScopedState v4 entry point. Configure before importing modules."""
+"""Configure and run the Mneme-Asterion memory service."""
 import argparse
 import os
 from pathlib import Path

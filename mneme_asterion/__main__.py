@@ -1,4 +1,4 @@
-"""Start the Mneme-Asterion ScopedState V4 service."""
+"""Start the Mneme-Asterion memory service."""
 import argparse
 import sys
 from tools.preflight import check_file
