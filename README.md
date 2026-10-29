@@ -35,31 +35,30 @@ Mneme-Asterion 基于 [ActiveMemoryIndex（AMI）](https://github.com/linxuhao/A
 
 ## 实验结果
 
-### LoCoMo-Refined
+### V4.1 评测基线
 
-LoCoMo-Refined：10条完整历史、861题，每种方法进行5轮独立建库评测。统一使用 gpt-4o-mini、text-embedding-v4，报告准确率均值与样本标准差。
+统一使用 `gpt-4o-mini` 和 `text-embedding-v4`，从头独立建库，完成检索、回答与评分。
 
-| 方法 | 准确率（%） |
-|---|---:|
-| AMI | 82.58 ± 0.50 |
-| P2：原文补证与撤回处理 | 85.25 ± 0.25 |
-| **Mneme-Asterion：ScopedState V4** | **85.30 ± 0.67** |
+| 评测集 | 规模 | RC15（V4.1评测基线） |
+|---|---|---:|
+| LoCoMo-Refined | 10条完整历史，861题，1轮 | **85.83%** |
+| 小benchmark | seed17–26，每seed 200题，共2,000题次 | **57.88 ± 2.38%** |
 
-相对 AMI 提高 **2.72 个百分点**。P2 与 V4 在该静态问答集上表现相近；状态变化测试及完整实验条件见[评测文档](docs/evaluation.md)。逐轮正确数提供于 [results/locomo_refined.json](results/locomo_refined.json)。
+小benchmark使用 [Agent Memory Benchmark（27d2733）](https://github.com/Nonlotus-eater/ami-reproduction/tree/27d2733/benchmark)，按公开数据集及原生题型比例抽样，保留完整历史，覆盖六个数据版本与七项能力。分数为七能力等权宏平均，再报告十seed均值与样本标准差；LoCoMo报告单轮准确率。
 
-### 小benchmark：多能力评测
+V4.1在RC15上加入全量撤回控制、命中位置补证和来源标记修复。全量产物检查定位到7道降级补证题，修复前后重新回答与评分为**0升、0降、7平**。上表是RC15完整评测结果；V4.1发布版完成定向验证与接口验收，未另跑完整评测。详见[评测记录](docs/evaluation.md)。
 
-使用 [Agent Memory Benchmark（27d2733）](https://github.com/Nonlotus-eater/ami-reproduction/tree/27d2733/benchmark)，按公开数据集及原生题型比例抽样，保留题目对应的完整历史，覆盖六个数据版本与七项能力。评测seed17–26，每seed 200题，每种方法共2,000题次；分数为七能力等权宏平均，报告十seed均值与样本标准差。
+### 历史版本对照
 
-| 方法 | 能力宏平均（%） |
-|---|---:|
-| AMI | 53.51 ± 2.43 |
-| InvMem | 52.00 ± 2.98 |
-| ReFind | 51.86 ± 4.66 |
-| P2 | 56.21 ± 2.53 |
-| **ScopedState V4（历史冻结版）** | **57.17 ± 2.82** |
+| 方法 | LoCoMo-Refined：五轮准确率（%） | 小benchmark：十seed能力宏平均（%） |
+|---|---:|---:|
+| AMI | 82.58 ± 0.50 | 53.51 ± 2.43 |
+| InvMem | 82.32 ± 0.53 | 52.00 ± 2.98 |
+| ReFind | 76.61 ± 0.97 | 51.86 ± 4.66 |
+| P2 | 85.25 ± 0.25 | 56.21 ± 2.53 |
+| ScopedState V4 | **85.30 ± 0.67** | **57.17 ± 2.82** |
 
-AMI、P2和V4共享新建冻结数据库，InvMem与ReFind使用各自原生建库。此轮使用边界修复前的冻结V4；P2与V4的Reader输入相同，二者分差来自回答与评分波动。逐seed数据与实验设置见[评测文档](docs/evaluation.md)。
+LoCoMo各方法进行五轮独立建库；V4相对AMI平均提高2.72个百分点。小benchmark采用历史冻结版本，AMI、P2、V4共享新建冻结库，InvMem与ReFind使用原生建库；该轮P2与V4的Reader输入相同，分差来自回答与评分波动。两列对应不同实验批次，版本与逐轮结果见[评测文档](docs/evaluation.md)。
 
 ## 代码结构
 

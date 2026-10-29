@@ -1,0 +1,52 @@
+{
+  "release": "4.1.0",
+  "full_evaluation_version": "RC15",
+  "release_full_evaluation_rerun": false,
+  "models": {
+    "llm": "gpt-4o-mini",
+    "embedding": "text-embedding-v4"
+  },
+  "build_policy": "fresh independent builds",
+  "locomo_refined": {
+    "histories": 10,
+    "questions": 861,
+    "rounds": 1,
+    "accuracy_percent": 85.83
+  },
+  "small_benchmark": {
+    "framework_commit": "27d2733",
+    "seeds": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "questions_per_seed": 200,
+    "completed": 2000,
+    "capability_macro_mean_percent": 57.88,
+    "capability_sample_std_percent": 2.38,
+    "dataset_macro_mean_percent": 57.47,
+    "dataset_sample_std_percent": 3.05
+  },
+  "targeted_validation": {
+    "inspected_questions": 2861,
+    "affected_fallback_questions": 7,
+    "control_budget_omissions": 0,
+    "paired_improved": 0,
+    "paired_regressed": 0,
+    "paired_tied": 7,
+    "scope": "fixed databases and baseline evidence; replace fallback excerpts, rerun state protection, Answer and Judge"
+  },
+  "release_acceptance": {
+    "offline_tests_passed": 147,
+    "real_model_streaming": true,
+    "http_user_isolation": true,
+    "restart_persistence": true
+  }
+}
