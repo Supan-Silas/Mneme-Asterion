@@ -69,7 +69,7 @@ def install_fakes():
                 reply = '{"memories": []}'
             else:
                 reply = 'What did I say about ' + user.splitlines()[0] + '?'
-            return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content=reply))])
+            return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content=reply, refusal=None), finish_reason='stop')])
 
     openai.OpenAI = FakeClient
     # All provider calls should be fakes. Any accidentally added network path fails.

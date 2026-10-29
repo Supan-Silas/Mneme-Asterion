@@ -8,7 +8,7 @@ from e_core.methods import WITHDRAW,RESTORE,audit_controls,attribute_terms,FILTE
 def withdrawal_state(raw,count):
  personal=lambda r:r['role']=='user' or r['speaker'].strip().casefold() not in {'assistant','ai','chatgpt','system',''}
  controls=[r for r in raw if personal(r) and WITHDRAW.search(r['body'].strip())]
- shown=fit(controls,count,14000);positions={r['id']:i for i,r in enumerate(raw)};active=[];audits=[]
+ shown=controls;positions={r['id']:i for i,r in enumerate(raw)};active=[];audits=[]
  for c in shown:
   later=[r for r in raw[positions[c['id']]+1:] if personal(r) and r['speaker'].strip().casefold()==c['speaker'].strip().casefold() and RESTORE.search(r['body'])]
   a=audit_controls([c],later,None)['controls'][0]
@@ -54,8 +54,36 @@ def apply_guarded(v,base,controls):
   if text.strip():out.append({**b,'text':text})
  return out,{'decision':v,'accepted':accepted,'blocked':blocked,'scope':'read-time evidence suppression only; source DB unchanged'}
 
+def edit_rejection_message(dropped,base,controls):
+ bad_e={str(x.get('proposal',{}).get('evidence_id')) for x in dropped}
+ bad_c={str(x.get('proposal',{}).get('control_id')) for x in dropped}
+ return ('Rejected nonliteral withdrawal edits: '+json.dumps(dropped,ensure_ascii=False)+
+  '\nCopy span exactly from EXISTING_EVIDENCE.text and control_quote exactly from POSSIBLE_CONTROL_SOURCES.body; preserve punctuation and line breaks. Do not invent a deletion or omit a required deletion to pass validation.'+
+  '\nReferenced source data: '+json.dumps({'evidence':[{'id':e['id'],'text':e['text']} for e in base if str(e['id']) in bad_e],
+  'controls':[{'id':c['id'],'body':c['body']} for c in controls if str(c['id']) in bad_c]},ensure_ascii=False))
+
+
+def control_batches(active,count,budget=14000):
+ batches=[];batch=[];used=0
+ for c in active:
+  n=count(json.dumps(c,ensure_ascii=False))
+  if batch and used+n>budget:batches.append(batch);batch=[];used=0
+  batch.append(c);used+=n
+ if batch:batches.append(batch)
+ return batches
+
 def generate_withdrawal(question,base,raw,call,tok):
  active,audit=withdrawal_state(raw,tok.count)
+ groups=control_batches(active,tok.count)
+ if len(groups)<=1:return _filter_active(question,base,active,audit,call,tok)
+ evidence=list(base);traces=[]
+ for group in groups:
+  ids={c['id'] for c in group}
+  subaudit={**audit,'audits':[a for a in audit['audits'] if a['id'] in ids]}
+  evidence,trace=_filter_active(question,evidence,group,subaudit,call,tok);traces.append(trace)
+ return evidence,{'state_audit':audit,'control_batches':traces,'all_controls_inspected':len(active)}
+
+def _filter_active(question,base,active,audit,call,tok):
  if not active:return list(base),{'version':'P2-W','state_audit':audit,'no_active_withdrawal_parity':True}
  batches=[];batch=[];used=0
  for e in base:
@@ -67,7 +95,9 @@ def generate_withdrawal(question,base,raw,call,tok):
  for j,batch in enumerate(batches):
   payload={'QUESTION':question,'EXISTING_EVIDENCE':batch,'POSSIBLE_CONTROL_SOURCES':active,'LATER_POSSIBLE_REAUTHORIZATION':[],'active_control_audit':audit}
   def valid(v):
-   n=normalize_edits(v,batch,active);assert not n['dropped_nonliteral'];validate_edits(n,batch,active)
+   n=normalize_edits(v,batch,active)
+   assert not n['dropped_nonliteral'],edit_rejection_message(n['dropped_nonliteral'],batch,active)
+   validate_edits(n,batch,active)
   valid.recover=lambda v:normalize_edits(v,batch,active)
   v=call(FILTER_PROMPT+'\n'+json.dumps(payload,ensure_ascii=False),'P2W_filter_'+str(j),valid);out,d=apply_guarded(v,batch,active);result+=out;decisions.append(d)
  return result,{'version':'P2-W','state_audit':audit,'batches':decisions,'all_base_items_inspected':len(base),'updates_not_modified':True,'source_database_not_deleted':True}

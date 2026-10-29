@@ -13,7 +13,7 @@ from urllib.parse import urlsplit, urlunsplit
 
 import numpy as np
 
-from . import config
+from . import config, runtime
 
 _model = None
 _lock = threading.Lock()
@@ -101,7 +101,7 @@ def _get_remote_client():
             from openai import OpenAI
 
             _client = OpenAI(api_key=config.EMBED_API_KEY, base_url=base_url,
-                             timeout=config.EMBED_TIMEOUT, max_retries=config.EMBED_RETRIES)
+                             timeout=config.EMBED_TIMEOUT, max_retries=0)
             _remote_gate = threading.BoundedSemaphore(config.EMBED_CONCURRENCY)
             _client_settings = settings
         return _client, _remote_gate
@@ -139,21 +139,29 @@ def _normalized(vector, dimensions: int) -> np.ndarray:
 
 
 def _remote_batch(client, gate, payload: list[str]) -> list[np.ndarray]:
-    with gate:
-        response = client.embeddings.create(
-            model=config.EMBED_MODEL, input=list(payload), dimensions=config.EMBED_DIMENSIONS,
-            encoding_format="float")
+    def operation():
+        with runtime.acquire(gate, 'embedding'):
+            return client.embeddings.create(model=config.EMBED_MODEL, input=list(payload),
+                dimensions=config.EMBED_DIMENSIONS, encoding_format='float',
+                timeout=min(config.EMBED_TIMEOUT, runtime.remaining()))
+    return runtime.invoke('embedding', operation, lambda response: _validate_batch(response, payload))
+
+
+def _validate_batch(response, payload):
     data = getattr(response, "data", None)
     if not isinstance(data, list) or len(data) != len(payload):
-        raise ValueError("Remote embedding response does not cover every input")
+        raise runtime.InvalidResponse("Remote embedding response does not cover every input")
     vectors = [None] * len(payload)
     for item in data:
         index = getattr(item, "index", None)
         if type(index) is not int or not 0 <= index < len(payload) or vectors[index] is not None:
-            raise ValueError("Remote embedding response indices must be a full bijection")
-        vectors[index] = _normalized(getattr(item, "embedding", None), config.EMBED_DIMENSIONS)
+            raise runtime.InvalidResponse("Remote embedding response indices must be a full bijection")
+        try:
+            vectors[index] = _normalized(getattr(item, "embedding", None), config.EMBED_DIMENSIONS)
+        except ValueError as exc:
+            raise runtime.InvalidResponse('invalid embedding vector') from exc
     if any(vector is None for vector in vectors):
-        raise ValueError("Remote embedding response missing an input index")
+        raise runtime.InvalidResponse("Remote embedding response missing an input index")
     return vectors
 
 

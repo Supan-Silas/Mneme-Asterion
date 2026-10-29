@@ -1,5 +1,14 @@
 # Changelog
 
+## v4.1.0 — 2026-10-29
+
+- Add bounded model retries and stage-specific fallbacks for extraction and retrieval.
+- Validate model responses and preserve unknown update decisions without caching them as facts.
+- Record successful write order atomically for idempotent updates and streaming memory.
+- Preserve all withdrawal controls, process model inputs in batches, and attach source metadata to fallback evidence.
+- Select fallback excerpts around query matches instead of truncating each source from its beginning.
+
+
 ## v4.0.2 — 2026-10-28
 
 - Organize service, retrieval and scoped-state modules under `mneme_asterion/`; retain `run_v4.py` as the root entry point.

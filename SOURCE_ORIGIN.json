@@ -1,11 +1,12 @@
 {
   "project": "Mneme-Asterion",
-  "version": "4.0.2",
+  "version": "4.1.0",
   "method": "ScopedStateV4",
   "runtime_reference_commit": "965cbc8672d9a14f1011e15099a5e445457574ed",
   "core_manifest": "provenance/CORE_SHA256.json",
   "module_layout": "provenance/MODULE_MAP.json",
   "source_manifest": "SHA256SUMS.json",
   "upstream": "provenance/UPSTREAM.json",
-  "license": "MIT"
+  "license": "MIT",
+  "release_base_commit": "71600dd"
 }

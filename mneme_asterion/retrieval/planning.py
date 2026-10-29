@@ -9,20 +9,21 @@ First fix the exact question scope: whose fact, which relationship/event, which 
 BASE_CONTEXT already remains available. Select zero to three concise source quotes ONLY when they supply a decisive premise, connect adjacent question/answer turns, cover a distinct requested list member, or highlight a decisive existing relation. If the answer is already direct, do not demand a more detailed story merely to justify search. Topical similarity, congratulations, generic advice, and questions WITHOUT their answering turn are insufficient.
 Source dates are recording dates. Preserve relative time expressions and their recording dates together. Infer neither absolute dates nor extra personal facts. For ordinal questions such as second puppy, include the distinguishing earlier/later adoption AND the naming answer, not side chatter. For counts, prefer distinct completed events in the requested interval; repeated mentions are not extra events, and suggestions are not completed events. Do not merge different events solely because they share an object name.
 Named human dialogue speakers remain people even when API role is assistant. Generic assistant suggestions/claims are not reports of the user's life. CANDIDATES preferentially retain actual user/named-person utterances. Keep speaker and event identity intact.
-Return JSON {"scope":{"subject_quote":"exact substring of QUESTION or BASE_CONTEXT","requested_relation":"relation actually asked","operation":"fact|list|count|comparison|duration|time|other"},"supports":[{"source_id":"provided ID","quote":"one exact contiguous BODY substring","purpose":"premise|bridge|list_member|highlight","reason":"why this exact source belongs to this question's person/event/time rather than just topic"}]}. Up to three supports; empty is valid. Never invent names, desired answers, source IDs, or quotes.'''
+Choose exactly ONE operation string from [fact, list, count, comparison, duration, time, other]. Never join labels with pipes, slashes, commas or spaces. For a compound request choose the dominant operation or other; describe all requested parts in requested_relation. Each purpose is exactly one of [premise, bridge, list_member, highlight].
+Return JSON {"scope":{"subject_quote":"exact substring of QUESTION or BASE_CONTEXT","requested_relation":"relation actually asked","operation":"fact"},"supports":[{"source_id":"provided ID","quote":"one exact contiguous BODY substring","purpose":"premise","reason":"why this exact source belongs to this question's person/event/time rather than just topic"}]}. Up to three supports; empty is valid. Never invent names, desired answers, source IDs, or quotes.'''
 
 def is_personal_record(r):
  return r['role']=='user' or r.get('speaker','').strip().casefold() not in {'assistant','ai','chatgpt','system',''}
 
 def scope_check(v,candidates,question,context):
  validate_support(v,candidates)
- scope=v.get('scope');assert isinstance(scope,dict)
- assert isinstance(scope.get('subject_quote'),str) and scope['subject_quote'].strip() and scope['subject_quote'] in question+'\n'+context
- assert isinstance(scope.get('requested_relation'),str) and scope['requested_relation'].strip()
- assert scope.get('operation') in {'fact','list','count','comparison','duration','time','other'}
+ scope=v.get('scope');assert isinstance(scope,dict),'scope must be an object'
+ assert isinstance(scope.get('subject_quote'),str) and scope['subject_quote'].strip() and scope['subject_quote'] in question+'\n'+context,'scope.subject_quote must be an exact nonempty substring of QUESTION or BASE_CONTEXT. The whole QUESTION is a valid literal span; copy it exactly: '+json.dumps(question,ensure_ascii=False)
+ assert isinstance(scope.get('requested_relation'),str) and scope['requested_relation'].strip(),'scope.requested_relation must be a nonempty string'
+ assert scope.get('operation') in {'fact','list','count','comparison','duration','time','other'},'Invalid scope.operation '+repr(scope.get('operation'))+'. Return exactly one string from [fact, list, count, comparison, duration, time, other]. For compound requests use the dominant operation or other; never join labels with pipes or slashes.'
  for s in v['supports']:
-  assert s.get('purpose') in {'premise','bridge','list_member','highlight'}
-  assert isinstance(s.get('reason'),str) and len(s['reason'].strip())>=8
+  assert s.get('purpose') in {'premise','bridge','list_member','highlight'},'support purpose must be premise/bridge/list_member/highlight'
+  assert isinstance(s.get('reason'),str) and len(s['reason'].strip())>=8,'support reason must explain relevance using at least 8 characters'
 
 def generate_r1(question,base,raw,call,tok):
  from memory_benchmark.pipeline.context import pack

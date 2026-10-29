@@ -28,7 +28,9 @@ def main():
         data=r.json()['data']
         assert isinstance(data,list) and 0 < len(data) <= 100
         assert all(isinstance(x.get('id'),str) and x['id'] and isinstance(x.get('content'),str) and x['content'].strip() for x in data)
-        print(json.dumps({'status':'contract_passed','method':r.json().get('method'),
+        if not any('cello' in x['content'].casefold() for x in data):
+            raise ValueError('Synthetic source fact absent from Search evidence')
+        print(json.dumps({'status':'contract_and_fact_recall_passed','method':r.json().get('method'),
                           'evidence_count':len(data), 'scope':scope,
                           'quality_score':None},ensure_ascii=False))
 

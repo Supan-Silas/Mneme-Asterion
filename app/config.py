@@ -406,3 +406,9 @@ def auth_misconfigured() -> str | None:
 
 def llm_available() -> bool:
     return bool(LLM_API_KEY)
+
+# Runtime reliability contract. One application retry owner (SDK retries disabled).
+REQUEST_TIMEOUT = min(1740.0, max(1.0, _float("AMI_REQUEST_TIMEOUT", 1500.0)))
+GATE_WAIT = max(0.01, _float("AMI_GATE_WAIT", 15.0))
+PROVIDER_ATTEMPTS = max(1, min(3, _int("AMI_PROVIDER_ATTEMPTS", 3)))
+RETRY_BASE = max(0.0, _float("AMI_RETRY_BASE", 0.5))

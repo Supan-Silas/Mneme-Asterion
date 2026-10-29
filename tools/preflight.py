@@ -17,6 +17,11 @@ def check_values(values):
                           'AMI_EMBED_BACKEND': 'openai'}.items():
         if values.get(key) != expected:
             errors.append(key + ' must be ' + expected)
+    for key, default in {'AMI_UPDATE_VERSION':'7', 'AMI_EXTRACT':'1', 'AMI_UPDATE_DETECT':'1',
+                         'AMI_DCI_SEARCH':'0', 'AMI_AGENTIC_SEARCH':'0', 'AMI_EVENT_DATES_ADD_CALL':'0',
+                         'AMI_HOP2_SLOTS':'0'}.items():
+        if values.get(key, default) != default:
+            errors.append(key + ' must be ' + default + ' for this audited runtime')
     # The V4 service profile uses Bearer authentication.
     if values.get('AMI_AUTH_SCHEME', '').lower() != 'bearer':
         errors.append('AMI_AUTH_SCHEME must be bearer for this release')

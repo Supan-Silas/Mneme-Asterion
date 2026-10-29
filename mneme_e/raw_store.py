@@ -48,8 +48,10 @@ def history(user_id):
     with connect() as db:
         rows = db.execute('''SELECT r.payload FROM e_raw_requests r JOIN requests q
             ON q.user_id=r.user_id AND q.request_id=r.request_id
-            WHERE r.user_id=? ORDER BY r.seq''', (user_id,)).fetchall()
-    # Preserve successful ingestion order, including interleaved session IDs.
+            JOIN request_commits c ON c.user_id=r.user_id AND c.request_id=r.request_id
+            WHERE r.user_id=? ORDER BY c.commit_seq''', (user_id,)).fetchall()
+    # Commit sequence is recorded atomically with native Add; staged arrival seq
+    # is not used to interpret successful writes. Preserve intra-request order.
     # Globally grouping a repeated session moves later controls before earlier
     # controls from another session. Only coalesce adjacent matching segments.
     sessions = []; previous_key = None

@@ -49,10 +49,11 @@ class HTTPTests(unittest.TestCase):
             self.assertEqual(r.status_code,200)
             self.assertEqual(r.json()['data'][0]['content'],'redacted and notice')
             self.assertEqual(r.json()['method'],'ScopedStateV4')
-    def test_transient_failure_not_fallback(self):
+    def test_transient_enrichment_failure_preserves_available_result(self):
         with patch.object(s.raw_store,'history',return_value={'sessions':[{'timestamp':None,'messages':[{'role':'user','text':'Source text','speaker':'User'}]}]}), patch.object(s.original.native,'search',return_value={'data':[]}), patch.object(s,'generate_r1q',side_effect=s.llm.UpstreamUnavailable(503,'fixture',2)):
             r=self.client.post('/search',headers=self.headers,json={'user_id':'u','query':'x','top_k':100})
-            self.assertEqual(r.status_code,503)
+            self.assertEqual(r.status_code,200)
+            self.assertEqual(r.json()['data'],[])
 
     def test_scoped_state_hook_preserves_other_owner_and_serializes_redaction(self):
         history={'sessions':[{'timestamp':None,'messages':[

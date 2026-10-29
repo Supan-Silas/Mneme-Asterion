@@ -34,6 +34,10 @@ _TIME_HINT = re.compile(
     r"\b(?:19|20)\d{2}\b", re.I)
 
 
+import concurrent.futures
+from . import runtime
+
+
 def record(kind: str, **fields) -> None:
     """Append one JSON line to AMI_REQUEST_LOG; never fails the request."""
     if not config.REQUEST_LOG:
@@ -74,13 +78,20 @@ class AdmissionValve:
         self.tickets = itertools.count()
 
     async def __call__(self, scope, receive, send):
+        if scope['type'] == 'http' and scope.get('path') in {'/add','/search'}:
+            with runtime.request_scope():
+                await self._dispatch(scope, receive, send)
+        else:
+            await self._dispatch(scope, receive, send)
+
+    async def _dispatch(self, scope, receive, send):
         path = scope.get("path") if scope["type"] == "http" and scope.get("method") == "POST" else None
         limit = _limit(path)
         if limit <= 0:
             await self.app(scope, receive, send)
             return
         queue, ticket = self.queues[path], next(self.tickets)
-        deadline = time.monotonic() + config.ADMISSION_WAIT
+        deadline = time.monotonic() + min(config.ADMISSION_WAIT, runtime.remaining())
         queue.append(ticket)
         try:
             while not (queue[0] == ticket and self.inflight[path] < limit):
@@ -123,6 +134,13 @@ async def upstream_unavailable(_request, exc: llm.UpstreamUnavailable) -> JSONRe
     valve_counters[f"upstream_{exc.status}"] += 1
     return JSONResponse({"detail": {"reason": exc.reason}}, status_code=exc.status,
                         headers={"Retry-After": str(exc.retry_after)})
+
+
+@app.exception_handler(runtime.PermanentProviderError)
+async def provider_configuration_error(_request, exc):
+    return JSONResponse({'detail': {'reason':'provider configuration or access error',
+                         'stage':exc.stage, 'retryable':False,
+                         'provider_status':exc.provider_status}}, status_code=502)
 
 
 def encode_or_unavailable(texts: list[str], **kwargs) -> np.ndarray:
@@ -620,7 +638,7 @@ def add(
     )
     # One writer per (request_id, user_id): a retry that overlaps the original
     # waits here and then observes the completed write, instead of racing it.
-    with store.request_gate(request.request_id, request.user_id):
+    with runtime.request_scope(), runtime.acquire(store.request_gate(request.request_id, request.user_id), "request_lock"):
         if store.request_seen(request.request_id, request.user_id):
             record("add", request_id=request.request_id, user_id=request.user_id, duplicate=True)
             return echo
@@ -629,58 +647,72 @@ def add(
         detection = (updates.start_detection(items)
                      if lines and config.UPDATE_DETECT and config.llm_available() else None)
         records: list[dict] = []
-        if lines:
-            prefix = chunk_prefix(request)
-            if config.EVENT_DATES_AT_ADD:
-                # One call for both: the facts, and when each fact's and each
-                # turn's event happened. Turn n is items[n]: build_items keeps
-                # the two lists aligned.
-                facts, turn_dates = llm.extract_dated(lines)
-                keys = [None] * len(facts)
-                for position, iso in turn_dates.items():
-                    if position < len(items):
-                        items[position].event_date = iso
-            elif config.FACT_KEYS:
-                keyed = llm.extract_keyed("\n".join(lines))
-                facts = [(fact, None) for fact, _ in keyed]
-                keys = [key for _, key in keyed]
-            else:
-                facts = [(fact, None) for fact in llm.extract_facts("\n".join(lines))]
-            for position, (fact, happened) in enumerate(facts):
-                content = fact if fact.startswith("[") else f"{prefix}{fact}"
-                items.append(
-                    store.Item(
-                        id=store.item_id(request.request_id, "fact", position, request.user_id),
-                        kind="fact",
-                        parent_id=None,
-                        content=content,
-                        created_at=items[0].created_at if items else None,
-                        event_date=happened,
-                        fact_key=keys[position] if config.FACT_KEYS else None,
+        try:
+            if lines:
+                prefix = chunk_prefix(request)
+                if config.EVENT_DATES_AT_ADD:
+                    # One call for both: the facts, and when each fact's and each
+                    # turn's event happened. Turn n is items[n]: build_items keeps
+                    # the two lists aligned.
+                    facts, turn_dates = llm.extract_dated(lines)
+                    keys = [None] * len(facts)
+                    for position, iso in turn_dates.items():
+                        if position < len(items):
+                            items[position].event_date = iso
+                elif config.FACT_KEYS:
+                    keyed = llm.extract_keyed("\n".join(lines))
+                    facts = [(fact, None) for fact, _ in keyed]
+                    keys = [key for _, key in keyed]
+                else:
+                    facts = [(fact, None) for fact in llm.extract_facts("\n".join(lines))]
+                for position, (fact, happened) in enumerate(facts):
+                    content = fact if fact.startswith("[") else f"{prefix}{fact}"
+                    items.append(
+                        store.Item(
+                            id=store.item_id(request.request_id, "fact", position, request.user_id),
+                            kind="fact",
+                            parent_id=None,
+                            content=content,
+                            created_at=items[0].created_at if items else None,
+                            event_date=happened,
+                            fact_key=keys[position] if config.FACT_KEYS else None,
+                        )
                     )
-                )
-        if detection is not None:
-            records = detection.result()
-            if config.UPDATE_RENDER:
-                # The update's current value as a plain statement, beside the
-                # extracted facts; numbered after them so ids never collide.
-                position = sum(1 for item in items if item.kind == "fact")
-                turns = {item.id: item.content for item in items if item.kind == "raw"}
-                for found in records:
-                    if not updates.renderable(found, turns.get(found["item_id"], "")):
-                        continue
-                    statement = found["statement"]
-                    items.append(store.Item(
-                        id=store.item_id(request.request_id, "fact", position, request.user_id),
-                        kind="fact", parent_id=None,
-                        content=statement if statement.startswith("[") else f"{prefix}{statement}",
-                        created_at=items[0].created_at if items else None))
-                    position += 1
+            if detection is not None:
+                records = detection.result(timeout=runtime.remaining())
+                if config.UPDATE_RENDER:
+                    # The update's current value as a plain statement, beside the
+                    # extracted facts; numbered after them so ids never collide.
+                    position = sum(1 for item in items if item.kind == "fact")
+                    turns = {item.id: item.content for item in items if item.kind == "raw"}
+                    for found in records:
+                        if not updates.renderable(found, turns.get(found["item_id"], "")):
+                            continue
+                        statement = found["statement"]
+                        items.append(store.Item(
+                            id=store.item_id(request.request_id, "fact", position, request.user_id),
+                            kind="fact", parent_id=None,
+                            content=statement if statement.startswith("[") else f"{prefix}{statement}",
+                            created_at=items[0].created_at if items else None))
+                        position += 1
+        finally:
+            # No task can write storage itself. Do not return while an already
+            # started detector is using the provider; its calls share this deadline.
+            if detection is not None:
+                if not detection.cancel():
+                    try:
+                        detection.result(timeout=runtime.remaining())
+                    except concurrent.futures.TimeoutError as exc:
+                        raise llm.UpstreamUnavailable(503, config.RETRY_AFTER, 'update detection deadline') from exc
+                    except (llm.UpstreamUnavailable, runtime.PermanentProviderError):
+                        raise
+        runtime.remaining()
         if items and config.EVENT_DATES_ADD_CALL:
             # One dedicated call per chunk, asking only for dates.
             date_items(items)
         if items:
             vectors = encode_or_unavailable([item.content for item in items])
+            runtime.remaining()
             store.add(request.user_id, request.session_id, request.request_id, items, vectors,
                       updates=records)
         stamps = [m.timestamp for m in request.messages if m.timestamp is not None]

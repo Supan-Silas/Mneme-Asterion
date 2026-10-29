@@ -18,6 +18,16 @@ def apply_notice(evidence,decision,active):
 def add_policy_notice(question,evidence,raw,call,tok):
  active,audit=withdrawal_state(raw,tok.count)
  if not active:return list(evidence),{'no_active_control_notice_parity':True}
+ groups=control_batches(active,tok.count)
+ if len(groups)>1:
+  decisions=[]
+  for group in groups:
+   payload={'QUESTION':question,'ACTIVE_SOURCE_CONTROLS':[{'id':c['id'],'body':c['body'],'subject':c['scope_audit']['subject']} for c in group]}
+   def valid(v):relevant_check(v,group)
+   v=call(RELEVANCE+'\n'+json.dumps(payload,ensure_ascii=False),'P2P_relevance',valid);decisions.append(v)
+   if v['relevant_control_ids']:
+    return apply_notice(evidence,v,group),{'relevance_batches':decisions,'no_forgotten_values_in_notice':True}
+  return list(evidence),{'relevance_batches':decisions,'no_forgotten_values_in_notice':True}
  payload={'QUESTION':question,'ACTIVE_SOURCE_CONTROLS':[{'id':c['id'],'body':c['body'],'subject':c['scope_audit']['subject']} for c in active]}
  def valid(v):relevant_check(v,active)
  valid.recover=lambda v:{'relevant_control_ids':list(dict.fromkeys(i for i in v.get('relevant_control_ids',[]) if i in {c['id'] for c in active}))[:6],'reason':v.get('reason','Uncertain relevance')} if isinstance(v,dict) else {'relevant_control_ids':[],'reason':'Unparseable relevance; no speculative notice'}

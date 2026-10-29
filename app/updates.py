@@ -25,8 +25,10 @@ rewritten, and no answer is produced: the returned set only loses items.
 from __future__ import annotations
 
 import collections
+import contextvars
 import concurrent.futures
 import functools
+import json
 import logging
 import re
 import threading
@@ -34,7 +36,7 @@ import time
 
 import numpy as np
 
-from . import config, llm, store
+from . import config, llm, store, runtime
 
 log = logging.getLogger("ami.updates")
 
@@ -135,6 +137,8 @@ def question_protected(query: str, options: list[str] | None) -> bool:
     started = time.monotonic()
     try:
         verdict = llm.classify_question(query, options)
+    except (llm.UpstreamUnavailable, runtime.PermanentProviderError):
+        raise
     except Exception:  # noqa: BLE001 - fail safe
         log.exception("question classification failed")
         verdict = None
@@ -142,6 +146,8 @@ def question_protected(query: str, options: list[str] | None) -> bool:
     stats["scope_seconds"] += time.monotonic() - started
     if verdict is None:
         stats["scope_failures"] += 1
+        if runtime.active():
+            raise llm.UpstreamUnavailable(503, config.RETRY_AFTER, 'question scope incomplete')
         return True
     protected = verdict["needs_past_value"] or verdict["time_scoped"]
     with _scope_lock:
@@ -318,6 +324,9 @@ def detect_or_none(raw_items: list[store.Item]) -> list[dict] | None:
     if statements is None:
         return None
     accepted = accept_statements(statements, raw_items)
+    proposals = [entry for entry in statements if entry.get('label') in ACCEPTED_INTENTS]
+    if len(accepted) != len(proposals):
+        raise llm.UpstreamUnavailable(503, config.RETRY_AFTER, 'update intent source validation incomplete')
     if not accepted:
         return []
     stats["accepted"] += 1
@@ -333,22 +342,22 @@ def detect_or_none(raw_items: list[store.Item]) -> list[dict] | None:
             continue
         entries.append({**entry, "turn": turn, "quote": quote, "statement": entry.get("current")})
     records = parse_updates(entries, raw_items)
+    if len(records) != len(extracted):
+        raise llm.UpstreamUnavailable(503, config.RETRY_AFTER, 'update source validation incomplete')
     stats["records"] += len(records)
     return records
 
 
 def detect(raw_items: list[store.Item]) -> list[dict]:
-    """Detection over a chunk's verbatim turns. Failure: no records."""
-    try:
-        return detect_or_none(raw_items) or []
-    except Exception:  # noqa: BLE001 - detection must never fail Add
-        log.exception("update detection failed")
-        return []
+    result = detect_or_none(raw_items)
+    if result is None:
+        raise llm.UpstreamUnavailable(503, config.RETRY_AFTER, 'update detection incomplete')
+    return result
 
 
 def start_detection(raw_items: list[store.Item]) -> concurrent.futures.Future:
-    """Run detect() beside the extraction call so Add waits for the slower one."""
-    return _executor.submit(detect, list(raw_items))
+    ctx = contextvars.copy_context()
+    return _executor.submit(ctx.run, detect, list(raw_items))
 
 
 # --- Search -------------------------------------------------------------------
@@ -423,6 +432,19 @@ def accept(record: dict, item: store.Item, quote: str) -> bool:
     return not old or mentions(quote, old) or mentions(old, quote)
 
 
+def replacement_validator(record, items):
+    """Apply the existing replacement gate inside the model retry boundary."""
+    def validate(number, quote):
+        if not accept(record, items[number], quote):
+            raise runtime.InvalidResponse(
+                'DIFFERENT verdict conflicts with the existing replacement gate: '+
+                json.dumps({'n':number,'quoted_value':quote,'old_value':record['old_value'],
+                            'new_value':record['new_value'],
+                            'rule':'A replaced value must be present in this memory, must not be the new value, and must match the stated old value when one is provided. Re-evaluate the same subject and attribute. OTHER is appropriate only if this memory is unrelated or contains no such explicit old value; do not invent a quote or relabel a genuinely replaced value to bypass validation.'},ensure_ascii=False))
+    validate.constraints={'old_value':record['old_value'],'new_value':record['new_value']}
+    return validate
+
+
 def resolve(index: store.UserIndex, user_id: str, records: list[dict]) -> tuple[dict[str, set[str]], bool]:
     """{update id: ids of the earlier items it replaced}, and whether every
     verification needed succeeded. Verdicts are persisted, so each (update,
@@ -438,17 +460,22 @@ def resolve(index: store.UserIndex, user_id: str, records: list[dict]) -> tuple[
         if not pending:
             continue
         verify = llm.verify_replaced if config.UPDATE_VERSION == 1 else llm.verify_replaced_v2
+        arguments = {} if config.UPDATE_VERSION == 1 else {'validate_replacement':replacement_validator(record,[index.items[row] for row in pending])}
         verdicts = verify(describe(record, index.items[update_row]),
-                          [index.items[row].content[:1200] for row in pending])
+                          [index.items[row].content[:1200] for row in pending], **arguments)
         if verdicts is None:
             complete = False
             continue
         chosen: dict[int, str] = {}
+        unknown = set()
         for number, quote in verdicts:
             if accept(record, index.items[pending[number]], quote):
                 chosen[number] = quote
+            else:
+                unknown.add(number)
+                complete = False
         new = [(record["id"], index.items[row].id, number in chosen, chosen.get(number))
-               for number, row in enumerate(pending)]
+               for number, row in enumerate(pending) if number not in unknown]
         store.add_checks(user_id, new)
         checks.update({(u, i): (r, q) for u, i, r, q in new})
     if config.UPDATE_VERSION >= 3:
@@ -498,13 +525,16 @@ def _chunk_facts(index: store.UserIndex, user_id: str, records: list[dict],
             context = (f"{describe(record, index.items[update_row])}\n"
                        f"Context: each memory below was extracted from the same earlier message as this one, "
                        f"which was confirmed to state the replaced value: {index.items[index.by_id[raw_id]].content[:600]}")
-            verdicts = llm.verify_replaced_v2(context, [index.items[row].content[:1200] for row in rows])
+            verdicts = llm.verify_replaced_v2(context, [index.items[row].content[:1200] for row in rows],
+                validate_replacement=replacement_validator(record,[index.items[row] for row in rows]))
             if verdicts is None:
                 complete = False
                 continue
             chosen = {n: q for n, q in verdicts if accept(record, index.items[rows[n]], q)}
+            unknown = {n for n,q in verdicts if n not in chosen}
+            if unknown: complete = False
             new = [(f"{record['id']}#chunk", index.items[row].id, n in chosen, chosen.get(n))
-                   for n, row in enumerate(rows)]
+                   for n, row in enumerate(rows) if n not in unknown]
             store.add_checks(user_id, new)
             checks.update({(u, i): (r, q) for u, i, r, q in new})
     return complete
@@ -524,13 +554,16 @@ def withheld(index: store.UserIndex, user_id: str, query: str) -> set[str]:
     records = [r for r in store.get_updates(user_id) if not r["relative"]]
     if not records:
         return set()
-    with _lock(user_id):
+    with runtime.acquire(_lock(user_id), "update_resolution_lock"):
         key = (len(index.items), len(records))
         cached = _resolved.get(user_id)
         if cached and cached[0] == key:
             per_update = cached[1]
         else:
             per_update, complete = resolve(index, user_id, records)
+            if not complete:
+                from .availability import note
+                note('search.old_value_partial', RuntimeError('unknown checks are not cached'))
             if complete:
                 _resolved[user_id] = (key, per_update)
     return set().union(*per_update.values()) if per_update else set()

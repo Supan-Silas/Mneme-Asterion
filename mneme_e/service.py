@@ -1,21 +1,34 @@
 """Standalone AMI+E Add/Search service. One process/worker per database."""
 import hashlib
 import threading
-from contextlib import asynccontextmanager
+from contextlib import asynccontextmanager, contextmanager
 from datetime import datetime, timezone
 from fastapi import FastAPI, Header, HTTPException
 from pydantic import Field
-from app import main as native, config, store, llm
+from app import main as native, config, store, llm, runtime
 from e_core.methods import raw_records, supplement, compose
 from . import raw_store, model
 from .context import pack
 
-_locks = [threading.RLock() for _ in range(256)]
+_locks = {}
+_locks_guard = threading.Lock()
 _count = None
 
 
+@contextmanager
 def user_lock(user):
-    return _locks[int.from_bytes(hashlib.sha256(user.encode()).digest()[:2], 'big') % len(_locks)]
+    # Exact user keys with waiter reference counts: no hash-bucket collisions.
+    with _locks_guard:
+        entry = _locks.setdefault(user, [threading.RLock(), 0])
+        entry[1] += 1
+    try:
+        with runtime.acquire(entry[0], 'user_lock'):
+            yield
+    finally:
+        with _locks_guard:
+            entry[1] -= 1
+            if entry[1] == 0:
+                del _locks[user]
 
 
 class Message(native.Message):
@@ -30,6 +43,8 @@ class AddRequest(native.AddRequest):
 @asynccontextmanager
 async def lifespan(app):
     global _count
+    if not __debug__:
+        raise RuntimeError('Optimized Python disables source validators; run without -O')
     native.startup()
     # FULL durability on both connections: preserve successful Add across crash.
     with store._lock:
@@ -45,6 +60,7 @@ async def lifespan(app):
 app = FastAPI(title='Mneme-Asterion E', version='e-system-20261023', lifespan=lifespan)
 app.add_middleware(native.AdmissionValve)
 app.add_exception_handler(llm.UpstreamUnavailable, native.upstream_unavailable)
+app.add_exception_handler(runtime.PermanentProviderError, native.provider_configuration_error)
 
 
 @app.get('/health')
@@ -55,7 +71,7 @@ def health(authorization: str | None = Header(default=None), x_api_key: str | No
 @app.post('/add', response_model=native.AddResponse)
 def add(request: AddRequest, authorization: str | None = Header(default=None), x_api_key: str | None = Header(default=None)):
     native.check_auth(authorization, x_api_key)
-    with user_lock(request.user_id):
+    with runtime.request_scope(), user_lock(request.user_id):
         try:
             raw_store.stage(request)
         except ValueError as exc:
@@ -75,7 +91,7 @@ def search(request: native.SearchRequest, authorization: str | None = Header(def
     native.check_auth(authorization, x_api_key)
     if request.top_k <= 0:
         return {'data': []}
-    with user_lock(request.user_id):
+    with runtime.request_scope(), user_lock(request.user_id):
         history = raw_store.history(request.user_id)
         # Fixed E baseline/context is top100, then respect the caller's output cap.
         baseline = native.search(request.model_copy(update={'top_k': 100}), authorization, x_api_key)

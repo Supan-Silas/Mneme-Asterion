@@ -48,12 +48,14 @@ class ReviewRegressions(unittest.TestCase):
             path = str(Path(tmp) / 'order.sqlite3')
             db = sqlite3.connect(path)
             db.execute('CREATE TABLE requests (user_id TEXT, request_id TEXT)')
+            db.execute('CREATE TABLE request_commits (commit_seq INTEGER PRIMARY KEY, user_id TEXT, request_id TEXT)')
             db.execute('CREATE TABLE e_raw_requests (seq INTEGER PRIMARY KEY, user_id TEXT, request_id TEXT, payload TEXT)')
             bodies = ['My project color is RED.', 'Please forget my project color.',
                       'Please remember my project color again: BLUE.']
             for i, (session, body) in enumerate(zip(['a', 'b', 'a'], bodies)):
                 payload = dict(session_id=session, request_id=str(i), messages=[dict(role='user', content=body)])
                 db.execute('INSERT INTO requests VALUES (?,?)', ('u', str(i)))
+                db.execute('INSERT INTO request_commits VALUES (?,?,?)', (i, 'u', str(i)))
                 db.execute('INSERT INTO e_raw_requests VALUES (?,?,?,?)', (i, 'u', str(i), json.dumps(payload)))
             db.commit()
             db.close()

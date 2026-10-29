@@ -1,5 +1,7 @@
 # Mneme-Asterion
 
+**V4.1**
+
 **面向长对话的智能体记忆系统：原文补证、来源核验与作用域状态管理。**
 
 Mneme-Asterion 基于 [ActiveMemoryIndex（AMI）](https://github.com/linxuhao/ActiveMemoryIndex)，提供持久化的写入与检索接口。系统将对话组织为原文、事实和更新记录，并在检索时补齐证据、处理撤回与恢复，向下游回答模型提供当前有效的记忆。
@@ -12,6 +14,14 @@ Mneme-Asterion 基于 [ActiveMemoryIndex（AMI）](https://github.com/linxuhao/A
 - **小规模多能力评测与运行工程**：基于 [Agent Memory Benchmark](https://github.com/Nonlotus-eater/ami-reproduction/tree/main/benchmark) 建立多seed评测流程；本项目迭代中提供了并发调度、共享模型准入、断点恢复与失败补跑实现，用于缩短实验反馈周期。
 
 写入、事实抽取和向量索引继承 AMI；记忆方法改进集中在证据检索、组织与有效性处理。小benchmark由独立仓库维护，完整抽样与并发运行代码见上述链接。模块与来源见[系统设计](docs/architecture.md)和[来源说明](ATTRIBUTION.md)。
+
+## V4.1 更新
+
+- **稳定运行**：模型请求采用有限重试；事实抽取和补证失败时使用原文降级路径。
+- **一致写入**：成功提交顺序、幂等记录和原文可见性保持一致，支持交错写入与检索。
+- **完整状态与来源**：撤回控制全量处理，长输入分批；降级补证保留说话人、时间和来源，并围绕实际命中位置选取原文。
+
+原文和向量索引持久化成功后，Add才返回成功。撤回处理无法完成时，本次Search返回暂不可用状态。V4.1使用独立数据库；旧版本数据库保留给原版本恢复使用。
 
 ## 工作流程
 

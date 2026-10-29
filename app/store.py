@@ -44,6 +44,12 @@ CREATE TABLE IF NOT EXISTS requests (
     user_id    TEXT NOT NULL,
     PRIMARY KEY (request_id, user_id)
 );
+CREATE TABLE IF NOT EXISTS request_commits (
+    commit_seq INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id TEXT NOT NULL, request_id TEXT NOT NULL,
+    UNIQUE(user_id, request_id)
+);
+CREATE TABLE IF NOT EXISTS runtime_contract (version TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS embedding_metadata (
     key TEXT PRIMARY KEY,
     value TEXT NOT NULL
@@ -163,7 +169,16 @@ def init() -> None:
         try:
             connection.execute("PRAGMA journal_mode=WAL")
             connection.execute("PRAGMA synchronous=NORMAL")
+            # Do not reuse old success/cache records under changed failure semantics.
+            existing = connection.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='requests'").fetchone()
+            contract = connection.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='runtime_contract'").fetchone()
+            if existing and connection.execute('SELECT 1 FROM requests LIMIT 1').fetchone() and not contract:
+                raise RuntimeError('Legacy database requires the original runtime. Start this new version with a new database; do not delete old state.')
             connection.executescript(SCHEMA)
+            version = connection.execute('SELECT version FROM runtime_contract').fetchall()
+            if version and version != [('4.1-runtime-v1',)]:
+                raise RuntimeError('Database runtime contract differs')
+            if not version: connection.execute("INSERT INTO runtime_contract VALUES ('4.1-runtime-v1')")
             # Stores built before the column existed: add it, empty.
             columns = {row[1] for row in connection.execute("PRAGMA table_info(items)")}
             if "event_date" not in columns:
@@ -176,6 +191,8 @@ def init() -> None:
                 update_columns = {row[1] for row in connection.execute("PRAGMA table_info(updates)")}
                 if "subject_is_user" not in update_columns:
                     connection.execute("ALTER TABLE updates ADD COLUMN subject_is_user INTEGER")
+            if connection.execute('SELECT 1 FROM requests q LEFT JOIN request_commits c ON q.user_id=c.user_id AND q.request_id=c.request_id WHERE c.commit_seq IS NULL LIMIT 1').fetchone():
+                raise RuntimeError('Incomplete commit-order ledger; do not infer or rewrite request order')
             dimensions = _bind_embedding_identity(connection)
             connection.commit()
         except Exception:
@@ -252,20 +269,31 @@ def add(user_id: str, session_id: str, request_id: str, items: list[Item], vecto
             )
             for offset, item in enumerate(items)
         ]
-        _conn.executemany(
-            "INSERT OR REPLACE INTO items "
-            "(id, user_id, session_id, request_id, kind, parent_id, content, created_at, seq, vec, event_date, fact_key) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-            rows,
-        )
-        if updates:
-            _insert_updates(user_id, request_id, updates)
-        _conn.execute(
-            "INSERT OR REPLACE INTO requests (request_id, user_id) VALUES (?, ?)", (request_id, user_id)
-        )
-        _conn.commit()
+        try:
+            _conn.executemany(
+                "INSERT OR REPLACE INTO items "
+                "(id, user_id, session_id, request_id, kind, parent_id, content, created_at, seq, vec, event_date, fact_key) "
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                rows,
+            )
+            if updates:
+                _insert_updates(user_id, request_id, updates)
+            _conn.execute(
+                "INSERT OR REPLACE INTO requests (request_id, user_id) VALUES (?, ?)", (request_id, user_id)
+            )
+            _conn.execute('INSERT INTO request_commits(user_id,request_id) VALUES (?,?)', (user_id,request_id))
+            _conn.commit()
+        except BaseException:
+            _conn.rollback()
+            raise
         global _cached_items
-        index.append(items, vectors)
+        try:
+            index.append(items, vectors)
+        except BaseException:
+            # Commit is durable; retries are idempotent and next Search reloads.
+            _cache.pop(user_id, None)
+            _cached_items = sum(len(value.items) for value in _cache.values())
+            raise
         _cached_items += len(items)
         _evict_to_fit()
         return len(items)
